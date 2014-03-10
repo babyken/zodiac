@@ -8,6 +8,7 @@
 
 #import "WebdataParser.h"
 #import <AFNetworking/AFNetworking.h>
+#import <Ono/Ono.h>
 
 static NSArray *zodiacs = nil;
 
@@ -55,6 +56,48 @@ static NSArray *zodiacs = nil;
     }];
     
     [operation start];
+}
+
+- (void)htmlParseForDailyHoroscope
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager GET:@"http://www.meiguoshenpo.com/MeiRi/d88099.html" parameters:nil success:^(AFHTTPRequestOperation *operation, id result) {
+        
+        if (result != nil) {
+            ONOXMLDocument *document = [ONOXMLDocument HTMLDocumentWithData:result error:nil];
+            
+            // document.rootElement.children 0- head 1- body
+            ONOXMLElement *body = document.rootElement.children[1];
+            // the second div'box_top_12', which is the seventh tag in body.children
+            ONOXMLElement *div_box_top_12 = body.children[6];
+            
+            // div'fLeft_margin_right_12_width_648' where the title is
+            ONOXMLElement *div_fLeft_margin_right_12_width_648 = div_box_top_12.children[0];
+            ONOXMLElement *div_box_dtl_648 = [div_fLeft_margin_right_12_width_648 firstChildWithTag:@"div"];
+            ONOXMLElement *div_dtl_hd1 = [div_box_dtl_648 firstChildWithTag:@"div"];
+            // the first div'dtl_hdt' where the title is <h1>金牛座今日运势2014年3月11日</h1>
+            NSLog(@"%@",[div_dtl_hd1 firstChildWithTag:@"h1"]);
+
+            // the second div'dtl_hdt' where the contents are
+            ONOXMLElement *div_dtl_hd2 = div_box_dtl_648.children[1];
+            NSArray *p = [div_dtl_hd2 childrenWithTag:@"p"];
+            NSString * content = [[p subarrayWithRange:NSMakeRange(0, p.count - 2)] componentsJoinedByString:@""];
+            NSLog(@"%@",[self stringByStrippingHrefFrom:content]);
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+
+#pragma mark - private
+-(NSString *) stringByStrippingHrefFrom:(NSString*)s
+{
+    NSRange r;
+    while ((r = [s rangeOfString:@"<(img|a)[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        s = [s stringByReplacingCharactersInRange:r withString:@""];
+    return s;
 }
 
 @end
