@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0680CA0218CD748600489E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0118CD748600489E32 /* Foundation.framework */; };
+		0680CA0418CD748600489E32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0318CD748600489E32 /* CoreGraphics.framework */; };
+		0680CA0618CD748600489E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0518CD748600489E32 /* UIKit.framework */; };
+		0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA0A18CD748600489E32 /* InfoPlist.strings */; };
+		0680CA0E18CD748600489E32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA0D18CD748600489E32 /* main.m */; };
+		0680CA1218CD748600489E32 /* zodiacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA1118CD748600489E32 /* zodiacAppDelegate.m */; };
+		0680CA1518CD748600489E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA1318CD748600489E32 /* Main.storyboard */; };
+		0680CA1818CD748600489E32 /* zodiacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA1718CD748600489E32 /* zodiacViewController.m */; };
+		0680CA1A18CD748600489E32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA1918CD748600489E32 /* Images.xcassets */; };
+		0680CA2118CD748600489E32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA2018CD748600489E32 /* XCTest.framework */; };
+		0680CA2218CD748600489E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0118CD748600489E32 /* Foundation.framework */; };
+		0680CA2318CD748600489E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0518CD748600489E32 /* UIKit.framework */; };
+		0680CA2B18CD748600489E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA2918CD748600489E32 /* InfoPlist.strings */; };
+		0680CA2D18CD748600489E32 /* zodiacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA2C18CD748600489E32 /* zodiacTests.m */; };
+		0680CA3718CD750600489E32 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA3618CD750600489E32 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0680CA2418CD748600489E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0680C9F618CD748600489E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0680C9FD18CD748600489E32;
+			remoteInfo = zodiac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0680C9FE18CD748600489E32 /* zodiac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zodiac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0680CA0118CD748600489E32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0680CA0318CD748600489E32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0680CA0518CD748600489E32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0680CA0918CD748600489E32 /* zodiac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zodiac-Info.plist"; sourceTree = "<group>"; };
+		0680CA0B18CD748600489E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0680CA0D18CD748600489E32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0680CA0F18CD748600489E32 /* zodiac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zodiac-Prefix.pch"; sourceTree = "<group>"; };
+		0680CA1018CD748600489E32 /* zodiacAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zodiacAppDelegate.h; sourceTree = "<group>"; };
+		0680CA1118CD748600489E32 /* zodiacAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacAppDelegate.m; sourceTree = "<group>"; };
+		0680CA1418CD748600489E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0680CA1618CD748600489E32 /* zodiacViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zodiacViewController.h; sourceTree = "<group>"; };
+		0680CA1718CD748600489E32 /* zodiacViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacViewController.m; sourceTree = "<group>"; };
+		0680CA1918CD748600489E32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0680CA1F18CD748600489E32 /* zodiacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zodiacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0680CA2018CD748600489E32 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0680CA2818CD748600489E32 /* zodiacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zodiacTests-Info.plist"; sourceTree = "<group>"; };
+		0680CA2A18CD748600489E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0680CA2C18CD748600489E32 /* zodiacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacTests.m; sourceTree = "<group>"; };
+		0680CA3618CD750600489E32 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0680C9FB18CD748600489E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA0418CD748600489E32 /* CoreGraphics.framework in Frameworks */,
+				0680CA0618CD748600489E32 /* UIKit.framework in Frameworks */,
+				0680CA0218CD748600489E32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0680CA1C18CD748600489E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA2118CD748600489E32 /* XCTest.framework in Frameworks */,
+				0680CA2318CD748600489E32 /* UIKit.framework in Frameworks */,
+				0680CA2218CD748600489E32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0680C9F518CD748600489E32 = {
+			isa = PBXGroup;
+			children = (
+				0680CA3618CD750600489E32 /* Podfile */,
+				0680CA0718CD748600489E32 /* zodiac */,
+				0680CA2618CD748600489E32 /* zodiacTests */,
+				0680CA0018CD748600489E32 /* Frameworks */,
+				0680C9FF18CD748600489E32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0680C9FF18CD748600489E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0680C9FE18CD748600489E32 /* zodiac.app */,
+				0680CA1F18CD748600489E32 /* zodiacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0680CA0018CD748600489E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA0118CD748600489E32 /* Foundation.framework */,
+				0680CA0318CD748600489E32 /* CoreGraphics.framework */,
+				0680CA0518CD748600489E32 /* UIKit.framework */,
+				0680CA2018CD748600489E32 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0680CA0718CD748600489E32 /* zodiac */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA1018CD748600489E32 /* zodiacAppDelegate.h */,
+				0680CA1118CD748600489E32 /* zodiacAppDelegate.m */,
+				0680CA1318CD748600489E32 /* Main.storyboard */,
+				0680CA1618CD748600489E32 /* zodiacViewController.h */,
+				0680CA1718CD748600489E32 /* zodiacViewController.m */,
+				0680CA1918CD748600489E32 /* Images.xcassets */,
+				0680CA0818CD748600489E32 /* Supporting Files */,
+			);
+			path = zodiac;
+			sourceTree = "<group>";
+		};
+		0680CA0818CD748600489E32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA0918CD748600489E32 /* zodiac-Info.plist */,
+				0680CA0A18CD748600489E32 /* InfoPlist.strings */,
+				0680CA0D18CD748600489E32 /* main.m */,
+				0680CA0F18CD748600489E32 /* zodiac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0680CA2618CD748600489E32 /* zodiacTests */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA2C18CD748600489E32 /* zodiacTests.m */,
+				0680CA2718CD748600489E32 /* Supporting Files */,
+			);
+			path = zodiacTests;
+			sourceTree = "<group>";
+		};
+		0680CA2718CD748600489E32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA2818CD748600489E32 /* zodiacTests-Info.plist */,
+				0680CA2918CD748600489E32 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0680C9FD18CD748600489E32 /* zodiac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0680CA3018CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiac" */;
+			buildPhases = (
+				0680C9FA18CD748600489E32 /* Sources */,
+				0680C9FB18CD748600489E32 /* Frameworks */,
+				0680C9FC18CD748600489E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zodiac;
+			productName = zodiac;
+			productReference = 0680C9FE18CD748600489E32 /* zodiac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0680CA1E18CD748600489E32 /* zodiacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0680CA3318CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiacTests" */;
+			buildPhases = (
+				0680CA1B18CD748600489E32 /* Sources */,
+				0680CA1C18CD748600489E32 /* Frameworks */,
+				0680CA1D18CD748600489E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0680CA2518CD748600489E32 /* PBXTargetDependency */,
+			);
+			name = zodiacTests;
+			productName = zodiacTests;
+			productReference = 0680CA1F18CD748600489E32 /* zodiacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0680C9F618CD748600489E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = zodiac;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = huis;
+				TargetAttributes = {
+					0680CA1E18CD748600489E32 = {
+						TestTargetID = 0680C9FD18CD748600489E32;
+					};
+				};
+			};
+			buildConfigurationList = 0680C9F918CD748600489E32 /* Build configuration list for PBXProject "zodiac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0680C9F518CD748600489E32;
+			productRefGroup = 0680C9FF18CD748600489E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0680C9FD18CD748600489E32 /* zodiac */,
+				0680CA1E18CD748600489E32 /* zodiacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0680C9FC18CD748600489E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA3718CD750600489E32 /* Podfile in Resources */,
+				0680CA1A18CD748600489E32 /* Images.xcassets in Resources */,
+				0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */,
+				0680CA1518CD748600489E32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0680CA1D18CD748600489E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA2B18CD748600489E32 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0680C9FA18CD748600489E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA1218CD748600489E32 /* zodiacAppDelegate.m in Sources */,
+				0680CA0E18CD748600489E32 /* main.m in Sources */,
+				0680CA1818CD748600489E32 /* zodiacViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0680CA1B18CD748600489E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA2D18CD748600489E32 /* zodiacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0680CA2518CD748600489E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0680C9FD18CD748600489E32 /* zodiac */;
+			targetProxy = 0680CA2418CD748600489E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0680CA0A18CD748600489E32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0680CA0B18CD748600489E32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0680CA1318CD748600489E32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0680CA1418CD748600489E32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0680CA2918CD748600489E32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0680CA2A18CD748600489E32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0680CA2E18CD748600489E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0680CA2F18CD748600489E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0680CA3118CD748600489E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0680CA3218CD748600489E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0680CA3418CD748600489E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "zodiacTests/zodiacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0680CA3518CD748600489E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiacTests/zodiacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0680C9F918CD748600489E32 /* Build configuration list for PBXProject "zodiac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0680CA2E18CD748600489E32 /* Debug */,
+				0680CA2F18CD748600489E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0680CA3018CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0680CA3118CD748600489E32 /* Debug */,
+				0680CA3218CD748600489E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0680CA3318CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0680CA3418CD748600489E32 /* Debug */,
+				0680CA3518CD748600489E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0680C9F618CD748600489E32 /* Project object */;
+}
