@@ -1,7 +1,6 @@
 # Xcode
-build/*
+build/
 *.pbxuser
-*.xcuserstate
 !default.pbxuser
 *.mode1v3
 !default.mode1v3
@@ -9,19 +8,17 @@ build/*
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-*.xcworkspace
-!default.xcworkspace
 xcuserdata
+*.xccheckout
 profile
 *.moved-aside
-xcuserdata
-*.plist
+DerivedData
+*.hmap
+*.ipa
 
-#generic
-*~
-*.lock
+#general
 .DS_Store
-*.swp
-*.out
-!*.xcodeproj/project.pbxproj
+.DS_Store?
 
+# CocoaPods
+Pods
