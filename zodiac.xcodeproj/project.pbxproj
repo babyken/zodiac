@@ -1,1118 +1,541 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00935779812E49A7B2F98AA1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0680C9F518CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA3618CD750600489E32</string>
-				<string>0680CA0718CD748600489E32</string>
-				<string>0680CA2618CD748600489E32</string>
-				<string>0680CA0018CD748600489E32</string>
-				<string>0680C9FF18CD748600489E32</string>
-				<string>7FFE16A70FA945F394030CAB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680C9F618CD748600489E32</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>zodiac</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>huis</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>0680CA1E18CD748600489E32</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>0680C9FD18CD748600489E32</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>0680C9F918CD748600489E32</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>0680C9F518CD748600489E32</string>
-			<key>productRefGroup</key>
-			<string>0680C9FF18CD748600489E32</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0680C9FD18CD748600489E32</string>
-				<string>0680CA1E18CD748600489E32</string>
-			</array>
-		</dict>
-		<key>0680C9F918CD748600489E32</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0680CA2E18CD748600489E32</string>
-				<string>0680CA2F18CD748600489E32</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0680C9FA18CD748600489E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0680CA1218CD748600489E32</string>
-				<string>0680CA0E18CD748600489E32</string>
-				<string>0680CA1818CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0680C9FB18CD748600489E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0680CA0418CD748600489E32</string>
-				<string>0680CA0618CD748600489E32</string>
-				<string>0680CA0218CD748600489E32</string>
-				<string>D3DC15DD18524DC69585A8DE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0680C9FC18CD748600489E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0680CA3718CD750600489E32</string>
-				<string>0680CA1A18CD748600489E32</string>
-				<string>0680CA0C18CD748600489E32</string>
-				<string>0680CA1518CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0680C9FD18CD748600489E32</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0680CA3018CD748600489E32</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FAC161687B9043EF8D831FB6</string>
-				<string>0680C9FA18CD748600489E32</string>
-				<string>0680C9FB18CD748600489E32</string>
-				<string>0680C9FC18CD748600489E32</string>
-				<string>2B76B2DEC15A4A8D9BD88ACC</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>zodiac</string>
-			<key>productName</key>
-			<string>zodiac</string>
-			<key>productReference</key>
-			<string>0680C9FE18CD748600489E32</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>0680C9FE18CD748600489E32</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>zodiac.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0680C9FF18CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680C9FE18CD748600489E32</string>
-				<string>0680CA1F18CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0018CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA0118CD748600489E32</string>
-				<string>0680CA0318CD748600489E32</string>
-				<string>0680CA0518CD748600489E32</string>
-				<string>0680CA2018CD748600489E32</string>
-				<string>00935779812E49A7B2F98AA1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0118CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0680CA0218CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0118CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA0318CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0680CA0418CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0318CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA0518CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0680CA0618CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0518CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA0718CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA1018CD748600489E32</string>
-				<string>0680CA1118CD748600489E32</string>
-				<string>0680CA1318CD748600489E32</string>
-				<string>0680CA1618CD748600489E32</string>
-				<string>0680CA1718CD748600489E32</string>
-				<string>0680CA1918CD748600489E32</string>
-				<string>0680CA0818CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>zodiac</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0818CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA0918CD748600489E32</string>
-				<string>0680CA0A18CD748600489E32</string>
-				<string>0680CA0D18CD748600489E32</string>
-				<string>0680CA0F18CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0918CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>zodiac-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0A18CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA0B18CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0B18CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0C18CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0A18CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA0D18CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA0E18CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0D18CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA0F18CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>zodiac-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1018CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>zodiacAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1118CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>zodiacAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1218CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA1118CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA1318CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA1418CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1418CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1518CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA1318CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA1618CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>zodiacViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1718CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>zodiacViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1818CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA1718CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA1918CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA1A18CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA1918CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA1B18CD748600489E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0680CA2D18CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0680CA1C18CD748600489E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0680CA2118CD748600489E32</string>
-				<string>0680CA2318CD748600489E32</string>
-				<string>0680CA2218CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0680CA1D18CD748600489E32</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0680CA2B18CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0680CA1E18CD748600489E32</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0680CA3318CD748600489E32</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0680CA1B18CD748600489E32</string>
-				<string>0680CA1C18CD748600489E32</string>
-				<string>0680CA1D18CD748600489E32</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>0680CA2518CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>zodiacTests</string>
-			<key>productName</key>
-			<string>zodiacTests</string>
-			<key>productReference</key>
-			<string>0680CA1F18CD748600489E32</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>0680CA1F18CD748600489E32</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>zodiacTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0680CA2018CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>0680CA2118CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA2018CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA2218CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0118CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA2318CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA0518CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA2418CD748600489E32</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>0680C9F618CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>0680C9FD18CD748600489E32</string>
-			<key>remoteInfo</key>
-			<string>zodiac</string>
-		</dict>
-		<key>0680CA2518CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>0680C9FD18CD748600489E32</string>
-			<key>targetProxy</key>
-			<string>0680CA2418CD748600489E32</string>
-		</dict>
-		<key>0680CA2618CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA2C18CD748600489E32</string>
-				<string>0680CA2718CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>zodiacTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA2718CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA2818CD748600489E32</string>
-				<string>0680CA2918CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA2818CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>zodiacTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA2918CD748600489E32</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0680CA2A18CD748600489E32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA2A18CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA2B18CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA2918CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA2C18CD748600489E32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>zodiacTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA2D18CD748600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA2C18CD748600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0680CA2E18CD748600489E32</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0680CA2F18CD748600489E32</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0680CA3018CD748600489E32</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0680CA3118CD748600489E32</string>
-				<string>0680CA3218CD748600489E32</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0680CA3118CD748600489E32</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7FFE16A70FA945F394030CAB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>zodiac/zodiac-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>zodiac/zodiac-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0680CA3218CD748600489E32</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7FFE16A70FA945F394030CAB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>zodiac/zodiac-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>zodiac/zodiac-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0680CA3318CD748600489E32</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0680CA3418CD748600489E32</string>
-				<string>0680CA3518CD748600489E32</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0680CA3418CD748600489E32</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>zodiac/zodiac-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>zodiacTests/zodiacTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0680CA3518CD748600489E32</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>zodiac/zodiac-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>zodiacTests/zodiacTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0680CA3618CD750600489E32</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Podfile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0680CA3718CD750600489E32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0680CA3618CD750600489E32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2B76B2DEC15A4A8D9BD88ACC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7FFE16A70FA945F394030CAB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D3DC15DD18524DC69585A8DE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00935779812E49A7B2F98AA1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC161687B9043EF8D831FB6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>0680C9F618CD748600489E32</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0680CA0218CD748600489E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0118CD748600489E32 /* Foundation.framework */; };
+		0680CA0418CD748600489E32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0318CD748600489E32 /* CoreGraphics.framework */; };
+		0680CA0618CD748600489E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0518CD748600489E32 /* UIKit.framework */; };
+		0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA0A18CD748600489E32 /* InfoPlist.strings */; };
+		0680CA0E18CD748600489E32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA0D18CD748600489E32 /* main.m */; };
+		0680CA1218CD748600489E32 /* zodiacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA1118CD748600489E32 /* zodiacAppDelegate.m */; };
+		0680CA1518CD748600489E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA1318CD748600489E32 /* Main.storyboard */; };
+		0680CA1818CD748600489E32 /* zodiacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA1718CD748600489E32 /* zodiacViewController.m */; };
+		0680CA1A18CD748600489E32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA1918CD748600489E32 /* Images.xcassets */; };
+		0680CA2118CD748600489E32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA2018CD748600489E32 /* XCTest.framework */; };
+		0680CA2218CD748600489E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0118CD748600489E32 /* Foundation.framework */; };
+		0680CA2318CD748600489E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0518CD748600489E32 /* UIKit.framework */; };
+		0680CA2B18CD748600489E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA2918CD748600489E32 /* InfoPlist.strings */; };
+		0680CA2D18CD748600489E32 /* zodiacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA2C18CD748600489E32 /* zodiacTests.m */; };
+		0680CA3718CD750600489E32 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA3618CD750600489E32 /* Podfile */; };
+		8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A018CDA6310095AF79 /* WebdataParser.m */; };
+		D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00935779812E49A7B2F98AA1 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0680CA2418CD748600489E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0680C9F618CD748600489E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0680C9FD18CD748600489E32;
+			remoteInfo = zodiac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00935779812E49A7B2F98AA1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0680C9FE18CD748600489E32 /* zodiac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zodiac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0680CA0118CD748600489E32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0680CA0318CD748600489E32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0680CA0518CD748600489E32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0680CA0918CD748600489E32 /* zodiac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zodiac-Info.plist"; sourceTree = "<group>"; };
+		0680CA0B18CD748600489E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0680CA0D18CD748600489E32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0680CA0F18CD748600489E32 /* zodiac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zodiac-Prefix.pch"; sourceTree = "<group>"; };
+		0680CA1018CD748600489E32 /* zodiacAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zodiacAppDelegate.h; sourceTree = "<group>"; };
+		0680CA1118CD748600489E32 /* zodiacAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacAppDelegate.m; sourceTree = "<group>"; };
+		0680CA1418CD748600489E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0680CA1618CD748600489E32 /* zodiacViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zodiacViewController.h; sourceTree = "<group>"; };
+		0680CA1718CD748600489E32 /* zodiacViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacViewController.m; sourceTree = "<group>"; };
+		0680CA1918CD748600489E32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0680CA1F18CD748600489E32 /* zodiacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zodiacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0680CA2018CD748600489E32 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0680CA2818CD748600489E32 /* zodiacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zodiacTests-Info.plist"; sourceTree = "<group>"; };
+		0680CA2A18CD748600489E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0680CA2C18CD748600489E32 /* zodiacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacTests.m; sourceTree = "<group>"; };
+		0680CA3618CD750600489E32 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7FFE16A70FA945F394030CAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		8889F59F18CDA6310095AF79 /* WebdataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebdataParser.h; sourceTree = "<group>"; };
+		8889F5A018CDA6310095AF79 /* WebdataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebdataParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0680C9FB18CD748600489E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA0418CD748600489E32 /* CoreGraphics.framework in Frameworks */,
+				0680CA0618CD748600489E32 /* UIKit.framework in Frameworks */,
+				0680CA0218CD748600489E32 /* Foundation.framework in Frameworks */,
+				D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0680CA1C18CD748600489E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA2118CD748600489E32 /* XCTest.framework in Frameworks */,
+				0680CA2318CD748600489E32 /* UIKit.framework in Frameworks */,
+				0680CA2218CD748600489E32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0680C9F518CD748600489E32 = {
+			isa = PBXGroup;
+			children = (
+				0680CA3618CD750600489E32 /* Podfile */,
+				0680CA0718CD748600489E32 /* zodiac */,
+				0680CA2618CD748600489E32 /* zodiacTests */,
+				0680CA0018CD748600489E32 /* Frameworks */,
+				0680C9FF18CD748600489E32 /* Products */,
+				7FFE16A70FA945F394030CAB /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0680C9FF18CD748600489E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0680C9FE18CD748600489E32 /* zodiac.app */,
+				0680CA1F18CD748600489E32 /* zodiacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0680CA0018CD748600489E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA0118CD748600489E32 /* Foundation.framework */,
+				0680CA0318CD748600489E32 /* CoreGraphics.framework */,
+				0680CA0518CD748600489E32 /* UIKit.framework */,
+				0680CA2018CD748600489E32 /* XCTest.framework */,
+				00935779812E49A7B2F98AA1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0680CA0718CD748600489E32 /* zodiac */ = {
+			isa = PBXGroup;
+			children = (
+				8889F59E18CDA5B30095AF79 /* DataFetch */,
+				0680CA1018CD748600489E32 /* zodiacAppDelegate.h */,
+				0680CA1118CD748600489E32 /* zodiacAppDelegate.m */,
+				0680CA1318CD748600489E32 /* Main.storyboard */,
+				0680CA1618CD748600489E32 /* zodiacViewController.h */,
+				0680CA1718CD748600489E32 /* zodiacViewController.m */,
+				0680CA1918CD748600489E32 /* Images.xcassets */,
+				0680CA0818CD748600489E32 /* Supporting Files */,
+			);
+			path = zodiac;
+			sourceTree = "<group>";
+		};
+		0680CA0818CD748600489E32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA0918CD748600489E32 /* zodiac-Info.plist */,
+				0680CA0A18CD748600489E32 /* InfoPlist.strings */,
+				0680CA0D18CD748600489E32 /* main.m */,
+				0680CA0F18CD748600489E32 /* zodiac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0680CA2618CD748600489E32 /* zodiacTests */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA2C18CD748600489E32 /* zodiacTests.m */,
+				0680CA2718CD748600489E32 /* Supporting Files */,
+			);
+			path = zodiacTests;
+			sourceTree = "<group>";
+		};
+		0680CA2718CD748600489E32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0680CA2818CD748600489E32 /* zodiacTests-Info.plist */,
+				0680CA2918CD748600489E32 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8889F59E18CDA5B30095AF79 /* DataFetch */ = {
+			isa = PBXGroup;
+			children = (
+				8889F59F18CDA6310095AF79 /* WebdataParser.h */,
+				8889F5A018CDA6310095AF79 /* WebdataParser.m */,
+			);
+			path = DataFetch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0680C9FD18CD748600489E32 /* zodiac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0680CA3018CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiac" */;
+			buildPhases = (
+				FAC161687B9043EF8D831FB6 /* Check Pods Manifest.lock */,
+				0680C9FA18CD748600489E32 /* Sources */,
+				0680C9FB18CD748600489E32 /* Frameworks */,
+				0680C9FC18CD748600489E32 /* Resources */,
+				2B76B2DEC15A4A8D9BD88ACC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zodiac;
+			productName = zodiac;
+			productReference = 0680C9FE18CD748600489E32 /* zodiac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0680CA1E18CD748600489E32 /* zodiacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0680CA3318CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiacTests" */;
+			buildPhases = (
+				0680CA1B18CD748600489E32 /* Sources */,
+				0680CA1C18CD748600489E32 /* Frameworks */,
+				0680CA1D18CD748600489E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0680CA2518CD748600489E32 /* PBXTargetDependency */,
+			);
+			name = zodiacTests;
+			productName = zodiacTests;
+			productReference = 0680CA1F18CD748600489E32 /* zodiacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0680C9F618CD748600489E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = zodiac;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = huis;
+				TargetAttributes = {
+					0680CA1E18CD748600489E32 = {
+						TestTargetID = 0680C9FD18CD748600489E32;
+					};
+				};
+			};
+			buildConfigurationList = 0680C9F918CD748600489E32 /* Build configuration list for PBXProject "zodiac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0680C9F518CD748600489E32;
+			productRefGroup = 0680C9FF18CD748600489E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0680C9FD18CD748600489E32 /* zodiac */,
+				0680CA1E18CD748600489E32 /* zodiacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0680C9FC18CD748600489E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA3718CD750600489E32 /* Podfile in Resources */,
+				0680CA1A18CD748600489E32 /* Images.xcassets in Resources */,
+				0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */,
+				0680CA1518CD748600489E32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0680CA1D18CD748600489E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA2B18CD748600489E32 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B76B2DEC15A4A8D9BD88ACC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC161687B9043EF8D831FB6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0680C9FA18CD748600489E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA1218CD748600489E32 /* zodiacAppDelegate.m in Sources */,
+				0680CA0E18CD748600489E32 /* main.m in Sources */,
+				0680CA1818CD748600489E32 /* zodiacViewController.m in Sources */,
+				8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0680CA1B18CD748600489E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680CA2D18CD748600489E32 /* zodiacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0680CA2518CD748600489E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0680C9FD18CD748600489E32 /* zodiac */;
+			targetProxy = 0680CA2418CD748600489E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0680CA0A18CD748600489E32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0680CA0B18CD748600489E32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0680CA1318CD748600489E32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0680CA1418CD748600489E32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0680CA2918CD748600489E32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0680CA2A18CD748600489E32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0680CA2E18CD748600489E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0680CA2F18CD748600489E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0680CA3118CD748600489E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFE16A70FA945F394030CAB /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0680CA3218CD748600489E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFE16A70FA945F394030CAB /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0680CA3418CD748600489E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "zodiacTests/zodiacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0680CA3518CD748600489E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiacTests/zodiacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0680C9F918CD748600489E32 /* Build configuration list for PBXProject "zodiac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0680CA2E18CD748600489E32 /* Debug */,
+				0680CA2F18CD748600489E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0680CA3018CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0680CA3118CD748600489E32 /* Debug */,
+				0680CA3218CD748600489E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0680CA3318CD748600489E32 /* Build configuration list for PBXNativeTarget "zodiacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0680CA3418CD748600489E32 /* Debug */,
+				0680CA3518CD748600489E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0680C9F618CD748600489E32 /* Project object */;
+}
