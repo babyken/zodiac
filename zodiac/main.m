@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "zodiacAppDelegate.h"
+#import "ZodiacAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([zodiacAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ZodiacAppDelegate class]));
     }
 }

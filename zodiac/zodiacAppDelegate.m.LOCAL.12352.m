@@ -8,32 +8,20 @@
 
 
 
-#import "ZodiacAppDelegate.h"
+#import "zodiacAppDelegate.h"
 
 #import "MainViewController.h"
 #import "ZodiacSelectViewController.h"
 
-#import "WebdataParser.h"
-
-
-@interface ZodiacAppDelegate ()
+@interface zodiacAppDelegate ()
 
 
 @end
 
-@implementation ZodiacAppDelegate
+@implementation zodiacAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
-    // Override point for customization after application launch.
-    [[WebdataParser sharedParser]htmlParserForWeeklyOrMonthlyHoroscope:@"http://www.meiguoshenpo.com/MeiYue/d87886.html" page:1 initialStr:@"" Completion:^(id result) {
-        NSLog(@"%@",result);
-    } failure:^(NSError *error) {
-        
-    } ];
-    
-
     
     // Override the storyboard
     

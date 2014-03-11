@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "zodiacAppDelegate.h"
+#import "ZodiacAppDelegate.h"
 
 @interface MainViewController ()
 
@@ -72,7 +72,7 @@
 #pragma mark -
 #pragma mark UI IBAction / Callback
 - (void)menuBtnPress:(UIBarButtonItem*)sender {
-    zodiacAppDelegate *appDelegate = (zodiacAppDelegate*)[[UIApplication sharedApplication] delegate];
+    ZodiacAppDelegate *appDelegate = (ZodiacAppDelegate*)[[UIApplication sharedApplication] delegate];
     [appDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 

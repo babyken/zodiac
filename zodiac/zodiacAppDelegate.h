@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MMDrawerController.h>
 
-@interface zodiacAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ZodiacAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) MMDrawerController *drawerController;
