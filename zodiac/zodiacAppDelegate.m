@@ -12,22 +12,42 @@
 
 #import "MainViewController.h"
 #import "ZodiacSelectViewController.h"
+<<<<<<< HEAD
 
 <<<<<<< HEAD
+=======
+#import "WebdataParser.h"
+
+>>>>>>> 497fa69635ea85e03b545e4e48f853786e428c8c
 @interface zodiacAppDelegate ()
 
 
 @end
+<<<<<<< HEAD
 =======
 #import "zodiacAppDelegate.h"
 #import "WebdataParser.h"
 >>>>>>> 7313b1294e012f4147ef330bb9e0b42ccc27f21c
+=======
+
+>>>>>>> 497fa69635ea85e03b545e4e48f853786e428c8c
 
 @implementation zodiacAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+    // Override point for customization after application launch.
+    [[WebdataParser sharedParser]htmlParserForWeeklyOrMonthlyHoroscope:@"http://www.meiguoshenpo.com/MeiYue/d87886.html" page:1 initialStr:@"" Completion:^(id result) {
+        NSLog(@"%@",result);
+    } failure:^(NSError *error) {
+        
+    } ];
+
+>>>>>>> 497fa69635ea85e03b545e4e48f853786e428c8c
     
     // Override the storyboard
     
@@ -64,6 +84,7 @@
     self.window.rootViewController = self.drawerController;
 
     [self.window makeKeyAndVisible];
+<<<<<<< HEAD
 =======
     // Override point for customization after application launch.
     [[WebdataParser sharedParser]htmlParserForWeeklyOrMonthlyHoroscope:@"http://www.meiguoshenpo.com/MeiYue/d87886.html" page:1 initialStr:@"" Completion:^(id result) {
@@ -72,6 +93,8 @@
         
     } ];
 >>>>>>> 7313b1294e012f4147ef330bb9e0b42ccc27f21c
+=======
+>>>>>>> 497fa69635ea85e03b545e4e48f853786e428c8c
     
     return YES;
 }
