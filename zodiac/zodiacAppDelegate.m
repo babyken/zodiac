@@ -8,16 +8,57 @@
 
 
 
-
-// =====  Rock and roll test for git  ======
-
 #import "zodiacAppDelegate.h"
+
+#import "MainViewController.h"
+#import "ZodiacSelectViewController.h"
+
+@interface zodiacAppDelegate ()
+
+
+@end
 
 @implementation zodiacAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    // Override the storyboard
+    
+    MainViewController *mainCenterVC = [[MainViewController alloc] initWithNibName:nil bundle:nil];
+    ZodiacSelectViewController *selectLeftVC = [[ZodiacSelectViewController alloc] initWithNibName:nil bundle:nil];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainCenterVC];
+
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:navigationController
+                                                            leftDrawerViewController:selectLeftVC];
+    
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+//    [self.drawerController
+//     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+//         MMDrawerControllerDrawerVisualStateBlock block;
+//         block = [[MMExampleDrawerVisualStateManager sharedManager]
+//                  drawerVisualStateBlockForDrawerSide:drawerSide];
+//         if(block){
+//             block(drawerController, drawerSide, percentVisible);
+//         }
+//     }];
+    
+
+    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        UIColor * tintColor = [UIColor colorWithRed:29.0/255.0
+                                              green:173.0/255.0
+                                               blue:234.0/255.0
+                                              alpha:1.0];
+        [self.window setTintColor:tintColor];
+    }
+    
+    self.window.rootViewController = self.drawerController;
+
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
