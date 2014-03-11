@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface zodiacViewController : UIViewController
+@interface MainViewController : UIViewController
 
 @end

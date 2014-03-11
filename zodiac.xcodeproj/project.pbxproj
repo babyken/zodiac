@@ -14,7 +14,6 @@
 		0680CA0E18CD748600489E32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA0D18CD748600489E32 /* main.m */; };
 		0680CA1218CD748600489E32 /* zodiacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA1118CD748600489E32 /* zodiacAppDelegate.m */; };
 		0680CA1518CD748600489E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA1318CD748600489E32 /* Main.storyboard */; };
-		0680CA1818CD748600489E32 /* zodiacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA1718CD748600489E32 /* zodiacViewController.m */; };
 		0680CA1A18CD748600489E32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA1918CD748600489E32 /* Images.xcassets */; };
 		0680CA2118CD748600489E32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA2018CD748600489E32 /* XCTest.framework */; };
 		0680CA2218CD748600489E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0118CD748600489E32 /* Foundation.framework */; };
@@ -49,8 +48,6 @@
 		0680CA1018CD748600489E32 /* zodiacAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zodiacAppDelegate.h; sourceTree = "<group>"; };
 		0680CA1118CD748600489E32 /* zodiacAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacAppDelegate.m; sourceTree = "<group>"; };
 		0680CA1418CD748600489E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0680CA1618CD748600489E32 /* zodiacViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zodiacViewController.h; sourceTree = "<group>"; };
-		0680CA1718CD748600489E32 /* zodiacViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacViewController.m; sourceTree = "<group>"; };
 		0680CA1918CD748600489E32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0680CA1F18CD748600489E32 /* zodiacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zodiacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0680CA2018CD748600489E32 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -128,8 +125,6 @@
 				0680CA1018CD748600489E32 /* zodiacAppDelegate.h */,
 				0680CA1118CD748600489E32 /* zodiacAppDelegate.m */,
 				0680CA1318CD748600489E32 /* Main.storyboard */,
-				0680CA1618CD748600489E32 /* zodiacViewController.h */,
-				0680CA1718CD748600489E32 /* zodiacViewController.m */,
 				0680CA1918CD748600489E32 /* Images.xcassets */,
 				0680CA0818CD748600489E32 /* Supporting Files */,
 			);
@@ -310,7 +305,6 @@
 			files = (
 				0680CA1218CD748600489E32 /* zodiacAppDelegate.m in Sources */,
 				0680CA0E18CD748600489E32 /* main.m in Sources */,
-				0680CA1818CD748600489E32 /* zodiacViewController.m in Sources */,
 				8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
