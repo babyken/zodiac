@@ -13,15 +13,21 @@
 #import "MainViewController.h"
 #import "ZodiacSelectViewController.h"
 
+<<<<<<< HEAD
 @interface zodiacAppDelegate ()
 
 
 @end
+=======
+#import "zodiacAppDelegate.h"
+#import "WebdataParser.h"
+>>>>>>> 7313b1294e012f4147ef330bb9e0b42ccc27f21c
 
 @implementation zodiacAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+<<<<<<< HEAD
     
     // Override the storyboard
     
@@ -58,6 +64,14 @@
     self.window.rootViewController = self.drawerController;
 
     [self.window makeKeyAndVisible];
+=======
+    // Override point for customization after application launch.
+    [[WebdataParser sharedParser]htmlParserForWeeklyOrMonthlyHoroscope:@"http://www.meiguoshenpo.com/MeiYue/d87886.html" page:1 initialStr:@"" Completion:^(id result) {
+        NSLog(@"%@",result);
+    } failure:^(NSError *error) {
+        
+    } ];
+>>>>>>> 7313b1294e012f4147ef330bb9e0b42ccc27f21c
     
     return YES;
 }
