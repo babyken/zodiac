@@ -21,7 +21,6 @@
 		0680CA2318CD748600489E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CA0518CD748600489E32 /* UIKit.framework */; };
 		0680CA2B18CD748600489E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA2918CD748600489E32 /* InfoPlist.strings */; };
 		0680CA2D18CD748600489E32 /* zodiacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA2C18CD748600489E32 /* zodiacTests.m */; };
-		0680CA3718CD750600489E32 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA3618CD750600489E32 /* Podfile */; };
 		0680CA3A18CEB13D00489E32 /* ZodiacSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA3918CEB13D00489E32 /* ZodiacSelectViewController.m */; };
 		8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A018CDA6310095AF79 /* WebdataParser.m */; };
 		D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00935779812E49A7B2F98AA1 /* libPods.a */; };
@@ -58,7 +57,6 @@
 		0680CA2818CD748600489E32 /* zodiacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zodiacTests-Info.plist"; sourceTree = "<group>"; };
 		0680CA2A18CD748600489E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0680CA2C18CD748600489E32 /* zodiacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zodiacTests.m; sourceTree = "<group>"; };
-		0680CA3618CD750600489E32 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0680CA3818CEB13D00489E32 /* ZodiacSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZodiacSelectViewController.h; sourceTree = "<group>"; };
 		0680CA3918CEB13D00489E32 /* ZodiacSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZodiacSelectViewController.m; sourceTree = "<group>"; };
 		7FFE16A70FA945F394030CAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 		0680C9F518CD748600489E32 = {
 			isa = PBXGroup;
 			children = (
-				0680CA3618CD750600489E32 /* Podfile */,
 				0680CA0718CD748600489E32 /* zodiac */,
 				0680CA2618CD748600489E32 /* zodiacTests */,
 				0680CA0018CD748600489E32 /* Frameworks */,
@@ -134,6 +131,7 @@
 				0680CA1618CD748600489E32 /* MainViewController.h */,
 				0680CA1718CD748600489E32 /* MainViewController.m */,
 				0680CA1318CD748600489E32 /* Main.storyboard */,
+				88EDE8A618D045FF00D444D5 /* Ads */,
 				8889F59E18CDA5B30095AF79 /* DataFetch */,
 				0680CA1918CD748600489E32 /* Images.xcassets */,
 				0680CA0818CD748600489E32 /* Supporting Files */,
@@ -177,6 +175,13 @@
 				8889F5A018CDA6310095AF79 /* WebdataParser.m */,
 			);
 			path = DataFetch;
+			sourceTree = "<group>";
+		};
+		88EDE8A618D045FF00D444D5 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0680CA3718CD750600489E32 /* Podfile in Resources */,
 				0680CA1A18CD748600489E32 /* Images.xcassets in Resources */,
 				0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */,
 				0680CA1518CD748600489E32 /* Main.storyboard in Resources */,
