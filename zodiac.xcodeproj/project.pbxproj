@@ -24,6 +24,8 @@
 		0680CA3718CD750600489E32 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0680CA3618CD750600489E32 /* Podfile */; };
 		0680CA3A18CEB13D00489E32 /* ZodiacSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA3918CEB13D00489E32 /* ZodiacSelectViewController.m */; };
 		8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A018CDA6310095AF79 /* WebdataParser.m */; };
+		8889F5A718CF04E70095AF79 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A418CF04E70095AF79 /* MainViewController.m */; };
+		8889F5A818CF04E70095AF79 /* ZodiacSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A618CF04E70095AF79 /* ZodiacSelectViewController.m */; };
 		D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00935779812E49A7B2F98AA1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,10 @@
 		7FFE16A70FA945F394030CAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8889F59F18CDA6310095AF79 /* WebdataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebdataParser.h; sourceTree = "<group>"; };
 		8889F5A018CDA6310095AF79 /* WebdataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebdataParser.m; sourceTree = "<group>"; };
+		8889F5A318CF04E70095AF79 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8889F5A418CF04E70095AF79 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8889F5A518CF04E70095AF79 /* ZodiacSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZodiacSelectViewController.h; sourceTree = "<group>"; };
+		8889F5A618CF04E70095AF79 /* ZodiacSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZodiacSelectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +133,21 @@
 		0680CA0718CD748600489E32 /* zodiac */ = {
 			isa = PBXGroup;
 			children = (
+
 				0680CA1018CD748600489E32 /* ZodiacAppDelegate.h */,
 				0680CA1118CD748600489E32 /* ZodiacAppDelegate.m */,
 				0680CA3818CEB13D00489E32 /* ZodiacSelectViewController.h */,
 				0680CA3918CEB13D00489E32 /* ZodiacSelectViewController.m */,
 				0680CA1618CD748600489E32 /* MainViewController.h */,
-				0680CA1718CD748600489E32 /* MainViewController.m */,
+
+				8889F59E18CDA5B30095AF79 /* DataFetch */,
+				0680CA1018CD748600489E32 /* zodiacAppDelegate.h */,
+				0680CA1118CD748600489E32 /* zodiacAppDelegate.m */,
+				8889F5A318CF04E70095AF79 /* MainViewController.h */,
+				8889F5A418CF04E70095AF79 /* MainViewController.m */,
+				8889F5A518CF04E70095AF79 /* ZodiacSelectViewController.h */,
+				8889F5A618CF04E70095AF79 /* ZodiacSelectViewController.m */,
+
 				0680CA1318CD748600489E32 /* Main.storyboard */,
 				8889F59E18CDA5B30095AF79 /* DataFetch */,
 				0680CA1918CD748600489E32 /* Images.xcassets */,
@@ -318,6 +333,8 @@
 				0680CA0E18CD748600489E32 /* main.m in Sources */,
 				0680CA1818CD748600489E32 /* MainViewController.m in Sources */,
 				8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */,
+				8889F5A818CF04E70095AF79 /* ZodiacSelectViewController.m in Sources */,
+				8889F5A718CF04E70095AF79 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
