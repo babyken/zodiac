@@ -7,6 +7,7 @@
 //
 
 #import "ZodiacSelectViewController.h"
+#import "ZodiacAppDelegate.h"
 
 @interface ZodiacSelectViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -43,7 +44,6 @@
 - (void)setupZodiacTable {
     CGRect bounds = self.view.bounds;
     CGRect tblFrame = CGRectMake(0, 0.0f, CGRectGetWidth(bounds), CGRectGetHeight(bounds));
-    NSLog(@"Betfeeds VC Table frame:  %@",NSStringFromCGRect(tblFrame));
     
     UITableView* tblZodiac = [[UITableView alloc] initWithFrame:tblFrame style:UITableViewStylePlain];
     tblZodiac.delegate = self;
@@ -57,6 +57,12 @@
 
 #pragma mark -
 #pragma mark UITableView DataSource
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ZodiacAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
