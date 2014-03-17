@@ -12,14 +12,17 @@
 #import "AdMoGoDelegateProtocol.h" 
 #import "AdMoGoView.h" 
 #import "AdMoGoWebBrowserControllerUserDelegate.h" 
+#import "AdMoGoInterstitial.h"
+#import "AdMoGoInterstitialDelegate.h"
 
-@interface MainViewController () <AdMoGoDelegate,AdMoGoWebBrowserControllerUserDelegate>
+@interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate>
 
 @end
 
 @implementation MainViewController
 {
     AdMoGoView *adView;
+    AdMoGoInterstitial *interstitial;
 }
 
 - (void)viewDidLoad
@@ -35,10 +38,18 @@
     UIBarButtonItem *barBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleDone target:self action:@selector(menuBtnPress:)];
     [self.navigationItem setLeftBarButtonItem:barBackButton];
     
+    // banner ad at the bottom
     adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
     adView.adWebBrowswerDelegate = self;
     adView.frame = CGRectMake(0, self.view.frame.size.height - 50, 320, 50);
     [self.view addSubview:adView];
+    
+    // interstitial ad
+    interstitial = [[AdMoGoInterstitial alloc]
+                    initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
+                    adType:AdViewTypeFullScreen
+                    adMoGoViewDelegate:self];
+    interstitial.adWebBrowswerDelegate = self;
 }
 
 
@@ -109,5 +120,32 @@
 {
      NSLog(@"广告接收失败回调, %@",error);
 }
+
+#pragma mark - AdMoGoInterstitialDelegate
+- (void)adsMoGoInterstitialAdDidStart{
+    NSLog(@"MOGO Full Screen Start");
+    
+}
+
+- (void)adsMoGoInterstitialAdIsReady{
+    NSLog(@"MOGO Full Screen IsReady");
+    
+}
+
+- (void)adsMoGoInterstitialAdReceivedRequest{
+    NSLog(@"MOGO Full Screen Received");
+    
+}
+
+- (void)adsMoGoInterstitialAdWillPresent{
+    NSLog(@"MOGO Full Screen Will Present");
+}
+
+
+- (void)adsMoGoInterstitialAdFailedWithError:(NSError *) error{
+    NSLog(@"MOGO Full Screen Failed");
+    
+}
+
 
 @end
