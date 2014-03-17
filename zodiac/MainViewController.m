@@ -134,7 +134,9 @@
 
 - (void)adsMoGoInterstitialAdReceivedRequest{
     NSLog(@"MOGO Full Screen Received");
-    
+    if ([interstitial isInterstitialReady]) {
+        [interstitial present];
+    }
 }
 
 - (void)adsMoGoInterstitialAdWillPresent{
@@ -143,8 +145,7 @@
 
 
 - (void)adsMoGoInterstitialAdFailedWithError:(NSError *) error{
-    NSLog(@"MOGO Full Screen Failed");
-    
+    NSLog(@"MOGO Full Screen Failed %@",error);
 }
 
 

@@ -172,6 +172,13 @@
 		88CA266D18D68CE300C5566B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA266C18D68CE200C5566B /* MessageUI.framework */; };
 		88CA266F18D68CE800C5566B /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA266E18D68CE800C5566B /* EventKit.framework */; };
 		88CA267118D68FCF00C5566B /* libAdsMogo_i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA267018D68FCF00C5566B /* libAdsMogo_i386.a */; };
+		88CA26D618D6ECAE00C5566B /* AdMoGoAdapterDoMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA26C518D6ECAE00C5566B /* AdMoGoAdapterDoMob.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		88CA26D718D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA26C718D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		88CA26D818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA26C918D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		88CA26D918D6ECAE00C5566B /* DomobAdSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88CA26D218D6ECAE00C5566B /* DomobAdSDKBundle.bundle */; };
+		88CA26DA18D6ECAE00C5566B /* libDomobAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA26D318D6ECAE00C5566B /* libDomobAdSDK.a */; };
+		88CA26DB18D6ECAF00C5566B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 88CA26D418D6ECAE00C5566B /* README.txt */; };
+		88CA26DC18D6ECAF00C5566B /* UserGuide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88CA26D518D6ECAE00C5566B /* UserGuide.pdf */; };
 		D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00935779812E49A7B2F98AA1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -412,6 +419,22 @@
 		88CA266C18D68CE200C5566B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		88CA266E18D68CE800C5566B /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		88CA267018D68FCF00C5566B /* libAdsMogo_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdsMogo_i386.a; sourceTree = "<group>"; };
+		88CA26C418D6ECAE00C5566B /* AdMoGoAdapterDoMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterDoMob.h; sourceTree = "<group>"; };
+		88CA26C518D6ECAE00C5566B /* AdMoGoAdapterDoMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterDoMob.m; sourceTree = "<group>"; };
+		88CA26C618D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterDoMobFullAd.h; sourceTree = "<group>"; };
+		88CA26C718D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterDoMobFullAd.m; sourceTree = "<group>"; };
+		88CA26C818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterDoMobSplash.h; sourceTree = "<group>"; };
+		88CA26C918D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterDoMobSplash.m; sourceTree = "<group>"; };
+		88CA26CB18D6ECAE00C5566B /* DMAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAdView.h; sourceTree = "<group>"; };
+		88CA26CC18D6ECAE00C5566B /* DMFeedsAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMFeedsAdView.h; sourceTree = "<group>"; };
+		88CA26CD18D6ECAE00C5566B /* DMInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMInterstitialAdController.h; sourceTree = "<group>"; };
+		88CA26CE18D6ECAE00C5566B /* DMRTSplashAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRTSplashAdController.h; sourceTree = "<group>"; };
+		88CA26CF18D6ECAE00C5566B /* DMSplashAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSplashAdController.h; sourceTree = "<group>"; };
+		88CA26D018D6ECAE00C5566B /* DMTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTools.h; sourceTree = "<group>"; };
+		88CA26D218D6ECAE00C5566B /* DomobAdSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DomobAdSDKBundle.bundle; sourceTree = "<group>"; };
+		88CA26D318D6ECAE00C5566B /* libDomobAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDomobAdSDK.a; sourceTree = "<group>"; };
+		88CA26D418D6ECAE00C5566B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		88CA26D518D6ECAE00C5566B /* UserGuide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = UserGuide.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +476,7 @@
 				88CA263818D68C2500C5566B /* libMobiSageRecommend.a in Frameworks */,
 				88CA261E18D68C2500C5566B /* libminizip.a in Frameworks */,
 				88CA261D18D68C2500C5566B /* libAdwoAdSDK5.0.a in Frameworks */,
+				88CA26DA18D6ECAE00C5566B /* libDomobAdSDK.a in Frameworks */,
 				88CA263918D68C2500C5566B /* libMobiSageSDK.a in Frameworks */,
 				D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */,
 			);
@@ -932,9 +956,57 @@
 			path = MobiSageSDK;
 			sourceTree = "<group>";
 		};
+		88CA26C218D6ECAE00C5566B /* DoMob_SDK_410 */ = {
+			isa = PBXGroup;
+			children = (
+				88CA26C318D6ECAE00C5566B /* AdsMoGoAdapter */,
+				88CA26CA18D6ECAE00C5566B /* DomobAdSDK */,
+				88CA26D418D6ECAE00C5566B /* README.txt */,
+				88CA26D518D6ECAE00C5566B /* UserGuide.pdf */,
+			);
+			path = DoMob_SDK_410;
+			sourceTree = "<group>";
+		};
+		88CA26C318D6ECAE00C5566B /* AdsMoGoAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				88CA26C418D6ECAE00C5566B /* AdMoGoAdapterDoMob.h */,
+				88CA26C518D6ECAE00C5566B /* AdMoGoAdapterDoMob.m */,
+				88CA26C618D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.h */,
+				88CA26C718D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.m */,
+				88CA26C818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.h */,
+				88CA26C918D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m */,
+			);
+			path = AdsMoGoAdapter;
+			sourceTree = "<group>";
+		};
+		88CA26CA18D6ECAE00C5566B /* DomobAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				88CA26CB18D6ECAE00C5566B /* DMAdView.h */,
+				88CA26CC18D6ECAE00C5566B /* DMFeedsAdView.h */,
+				88CA26CD18D6ECAE00C5566B /* DMInterstitialAdController.h */,
+				88CA26CE18D6ECAE00C5566B /* DMRTSplashAdController.h */,
+				88CA26CF18D6ECAE00C5566B /* DMSplashAdController.h */,
+				88CA26D018D6ECAE00C5566B /* DMTools.h */,
+				88CA26D118D6ECAE00C5566B /* DomobAdSDKBundle */,
+				88CA26D318D6ECAE00C5566B /* libDomobAdSDK.a */,
+			);
+			path = DomobAdSDK;
+			sourceTree = "<group>";
+		};
+		88CA26D118D6ECAE00C5566B /* DomobAdSDKBundle */ = {
+			isa = PBXGroup;
+			children = (
+				88CA26D218D6ECAE00C5566B /* DomobAdSDKBundle.bundle */,
+			);
+			path = DomobAdSDKBundle;
+			sourceTree = "<group>";
+		};
 		88EDE8A618D045FF00D444D5 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				88CA26C218D6ECAE00C5566B /* DoMob_SDK_410 */,
 				88CA24F318D68C2500C5566B /* AdsMoGoRes */,
 				88CA255618D68C2500C5566B /* AdsMoGoSDK */,
 				88CA258718D68C2500C5566B /* Adwo_SDK_500 */,
@@ -1036,7 +1108,9 @@
 				88CA261118D68C2500C5566B /* webview_bar_pause.png in Resources */,
 				88CA25CD18D68C2500C5566B /* adsmogo_bannerface50.png in Resources */,
 				88CA25C818D68C2500C5566B /* adsmogo_corner@2x.png in Resources */,
+				88CA26D918D6ECAE00C5566B /* DomobAdSDKBundle.bundle in Resources */,
 				88CA262118D68C2500C5566B /* adwo_audio_icon.png in Resources */,
+				88CA26DB18D6ECAF00C5566B /* README.txt in Resources */,
 				88CA25E918D68C2500C5566B /* webview_bar_next_hover@2x.png in Resources */,
 				88CA25F218D68C2500C5566B /* webview_bar_close_hover_ipad@2x.png in Resources */,
 				88CA263A18D68C2500C5566B /* MobiSageRecommendBundle.bundle in Resources */,
@@ -1125,6 +1199,7 @@
 				88CA263618D68C2500C5566B /* mobiSage_iOS_SDK.pdf in Resources */,
 				88CA25E818D68C2500C5566B /* webview_bar_next_grey@2x.png in Resources */,
 				88CA25C918D68C2500C5566B /* adsmogo_picrollbg@2x.png in Resources */,
+				88CA26DC18D6ECAF00C5566B /* UserGuide.pdf in Resources */,
 				88CA25D318D68C2500C5566B /* website-320x50.gif in Resources */,
 				0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */,
 				88CA25F018D68C2500C5566B /* webview_bar_back_grey_ipad@2x.png in Resources */,
@@ -1187,16 +1262,19 @@
 			files = (
 				88CA263B18D68C2500C5566B /* Reachability.m in Sources */,
 				88CA261B18D68C2500C5566B /* AdMoGoAdapterAdwoFullAd.m in Sources */,
+				88CA26D618D6ECAE00C5566B /* AdMoGoAdapterDoMob.m in Sources */,
 				0680CA3A18CEB13D00489E32 /* ZodiacSelectViewController.m in Sources */,
 				88CA263718D68C2500C5566B /* JSONKit.m in Sources */,
 				88CA261C18D68C2500C5566B /* AdMoGoAdapterAdwoSplash.m in Sources */,
 				88CA263418D68C2500C5566B /* AdMoGoAdapterMobiSageFullAd.m in Sources */,
 				0680CA1218CD748600489E32 /* ZodiacAppDelegate.m in Sources */,
 				0680CA0E18CD748600489E32 /* main.m in Sources */,
+				88CA26D818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m in Sources */,
 				88CA263318D68C2500C5566B /* AdMoGoAdapterMobiSage.m in Sources */,
 				88CA261A18D68C2500C5566B /* AdMoGoAdapterAdwo.m in Sources */,
 				88CA263518D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.m in Sources */,
 				0680CA1818CD748600489E32 /* MainViewController.m in Sources */,
+				88CA26D718D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.m in Sources */,
 				8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1339,6 +1417,7 @@
 					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/32-bit",
 					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/64-bit",
 					"$(PROJECT_DIR)/zodiac/Ads/Mobisage_SDK_541/MobiSageSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/DoMob_SDK_410/DomobAdSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1381,6 +1460,7 @@
 					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/32-bit",
 					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/64-bit",
 					"$(PROJECT_DIR)/zodiac/Ads/Mobisage_SDK_541/MobiSageSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/DoMob_SDK_410/DomobAdSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
