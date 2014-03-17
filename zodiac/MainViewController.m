@@ -47,6 +47,8 @@
     // interstitial ad
     interstitial = [[AdMoGoInterstitial alloc]
                     initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
+                    isRefresh:YES
+                    adInterval:10
                     adType:AdViewTypeFullScreen
                     adMoGoViewDelegate:self];
     interstitial.adWebBrowswerDelegate = self;
