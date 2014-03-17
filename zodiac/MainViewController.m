@@ -9,11 +9,18 @@
 #import "MainViewController.h"
 #import "ZodiacAppDelegate.h"
 
-@interface MainViewController ()
+#import "AdMoGoDelegateProtocol.h" 
+#import "AdMoGoView.h" 
+#import "AdMoGoWebBrowserControllerUserDelegate.h" 
+
+@interface MainViewController () <AdMoGoDelegate,AdMoGoWebBrowserControllerUserDelegate>
 
 @end
 
 @implementation MainViewController
+{
+    AdMoGoView *adView;
+}
 
 - (void)viewDidLoad
 {
@@ -27,6 +34,11 @@
     
     UIBarButtonItem *barBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleDone target:self action:@selector(menuBtnPress:)];
     [self.navigationItem setLeftBarButtonItem:barBackButton];
+    
+    adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
+    adView.adWebBrowswerDelegate = self;
+    adView.frame = CGRectMake(0, self.view.frame.size.height - 50, 320, 50);
+    [self.view addSubview:adView];
 }
 
 
@@ -76,5 +88,26 @@
     [appDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
+
+#pragma mark - AdMoGoDelegate
+- (UIViewController*)viewControllerForPresentingModalView
+{
+    return self;
+}
+
+- (void)adMoGoDidStartAd:(AdMoGoView *)adMoGoView
+{
+    NSLog(@"广告开始请求回调");
+}
+
+- (void)adMoGoDidReceiveAd:(AdMoGoView *)adMoGoView
+{
+    NSLog(@"广告接收成功回调");
+}
+
+- (void)adMoGoDidFailToReceiveAd:(AdMoGoView *)adMoGoView didFailWithError:(NSError *)error
+{
+     NSLog(@"广告接收失败回调, %@",error);
+}
 
 @end

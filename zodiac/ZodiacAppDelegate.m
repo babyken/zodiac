@@ -26,11 +26,11 @@
 {
     
     // Override point for customization after application launch.
-    [[WebdataParser sharedParser]htmlParserForWeeklyOrMonthlyHoroscope:@"http://www.meiguoshenpo.com/MeiYue/d87886.html" page:1 initialStr:@"" Completion:^(id result) {
-        NSLog(@"%@",result);
-    } failure:^(NSError *error) {
-        
-    } ];
+//    [[WebdataParser sharedParser]htmlParserForWeeklyOrMonthlyHoroscope:@"http://www.meiguoshenpo.com/MeiYue/d87886.html" page:1 initialStr:@"" Completion:^(id result) {
+//        NSLog(@"%@",result);
+//    } failure:^(NSError *error) {
+//        
+//    } ];
     
     
     // Override the storyboard
