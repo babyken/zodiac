@@ -9,16 +9,30 @@
 #import "MainViewController.h"
 #import "ZodiacAppDelegate.h"
 
+<<<<<<< HEAD
 #import "PeriodSegmentView.h"
 #import "FateDetailView.h"
 
 @interface MainViewController ()
+=======
+#import "AdMoGoDelegateProtocol.h" 
+#import "AdMoGoView.h" 
+#import "AdMoGoWebBrowserControllerUserDelegate.h" 
+#import "AdMoGoInterstitial.h"
+#import "AdMoGoInterstitialDelegate.h"
+
+@interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate>
+>>>>>>> 84a4808e694996004ce8c1b3c294bf34264c93eb
 
 @property (strong, nonatomic) FateDetailView *fateDetailView;
 
 @end
 
 @implementation MainViewController
+{
+    AdMoGoView *adView;
+    AdMoGoInterstitial *interstitial;
+}
 
 - (void)viewDidLoad
 {
@@ -44,6 +58,7 @@
 
     [self.navigationItem setLeftBarButtonItem:barBackButton];
     
+<<<<<<< HEAD
     
     
     // =========== Segment Control ============
@@ -56,6 +71,22 @@
     _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - periodSegmentView.frame.size.height}}];
     
     [self.view addSubview:_fateDetailView];
+=======
+    // banner ad at the bottom
+    adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
+    adView.adWebBrowswerDelegate = self;
+    adView.frame = CGRectMake(0, self.view.frame.size.height - 50, 320, 50);
+    [self.view addSubview:adView];
+    
+    // interstitial ad
+    interstitial = [[AdMoGoInterstitial alloc]
+                    initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
+                    isRefresh:YES
+                    adInterval:10
+                    adType:AdViewTypeFullScreen
+                    adMoGoViewDelegate:self];
+    interstitial.adWebBrowswerDelegate = self;
+>>>>>>> 84a4808e694996004ce8c1b3c294bf34264c93eb
 }
 
 
@@ -127,6 +158,55 @@
         default:
             break;
     }
+}
+
+
+#pragma mark - AdMoGoDelegate
+- (UIViewController*)viewControllerForPresentingModalView
+{
+    return self;
+}
+
+- (void)adMoGoDidStartAd:(AdMoGoView *)adMoGoView
+{
+    NSLog(@"广告开始请求回调");
+}
+
+- (void)adMoGoDidReceiveAd:(AdMoGoView *)adMoGoView
+{
+    NSLog(@"广告接收成功回调");
+}
+
+- (void)adMoGoDidFailToReceiveAd:(AdMoGoView *)adMoGoView didFailWithError:(NSError *)error
+{
+     NSLog(@"广告接收失败回调, %@",error);
+}
+
+#pragma mark - AdMoGoInterstitialDelegate
+- (void)adsMoGoInterstitialAdDidStart{
+    NSLog(@"MOGO Full Screen Start");
+    
+}
+
+- (void)adsMoGoInterstitialAdIsReady{
+    NSLog(@"MOGO Full Screen IsReady");
+    
+}
+
+- (void)adsMoGoInterstitialAdReceivedRequest{
+    NSLog(@"MOGO Full Screen Received");
+    if ([interstitial isInterstitialReady]) {
+        [interstitial present];
+    }
+}
+
+- (void)adsMoGoInterstitialAdWillPresent{
+    NSLog(@"MOGO Full Screen Will Present");
+}
+
+
+- (void)adsMoGoInterstitialAdFailedWithError:(NSError *) error{
+    NSLog(@"MOGO Full Screen Failed %@",error);
 }
 
 
