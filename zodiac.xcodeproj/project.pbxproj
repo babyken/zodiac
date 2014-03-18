@@ -1287,15 +1287,12 @@
 				88CA263418D68C2500C5566B /* AdMoGoAdapterMobiSageFullAd.m in Sources */,
 				0680CA1218CD748600489E32 /* ZodiacAppDelegate.m in Sources */,
 				0680CA0E18CD748600489E32 /* main.m in Sources */,
-<<<<<<< HEAD
 				0641852018D6A1830012403C /* PeriodSegmentView.m in Sources */,
 				0641852418D6CE060012403C /* FateDetailView.m in Sources */,
-=======
 				88CA26D818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m in Sources */,
 				88CA263318D68C2500C5566B /* AdMoGoAdapterMobiSage.m in Sources */,
 				88CA261A18D68C2500C5566B /* AdMoGoAdapterAdwo.m in Sources */,
 				88CA263518D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.m in Sources */,
->>>>>>> 84a4808e694996004ce8c1b3c294bf34264c93eb
 				0680CA1818CD748600489E32 /* MainViewController.m in Sources */,
 				88CA26D718D6ECAE00C5566B /* AdMoGoAdapterDoMobFullAd.m in Sources */,
 				8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */,

@@ -9,12 +9,9 @@
 #import "MainViewController.h"
 #import "ZodiacAppDelegate.h"
 
-<<<<<<< HEAD
 #import "PeriodSegmentView.h"
 #import "FateDetailView.h"
 
-@interface MainViewController ()
-=======
 #import "AdMoGoDelegateProtocol.h" 
 #import "AdMoGoView.h" 
 #import "AdMoGoWebBrowserControllerUserDelegate.h" 
@@ -22,7 +19,7 @@
 #import "AdMoGoInterstitialDelegate.h"
 
 @interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate>
->>>>>>> 84a4808e694996004ce8c1b3c294bf34264c93eb
+
 
 @property (strong, nonatomic) FateDetailView *fateDetailView;
 
@@ -58,8 +55,6 @@
 
     [self.navigationItem setLeftBarButtonItem:barBackButton];
     
-<<<<<<< HEAD
-    
     
     // =========== Segment Control ============
     PeriodSegmentView *periodSegmentView = [[PeriodSegmentView alloc] initWithFrame:(CGRect){{0.0, 0.0}, {bounds.size.width, 53.0}}
@@ -71,11 +66,14 @@
     _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - periodSegmentView.frame.size.height}}];
     
     [self.view addSubview:_fateDetailView];
-=======
+
     // banner ad at the bottom
     adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
     adView.adWebBrowswerDelegate = self;
-    adView.frame = CGRectMake(0, self.view.frame.size.height - 50, 320, 50);
+    adView.frame = CGRectMake(0, bounds.size.height - 50, 320, 50);
+    
+    adView.backgroundColor = [UIColor redColor];
+    
     [self.view addSubview:adView];
     
     // interstitial ad
@@ -86,7 +84,7 @@
                     adType:AdViewTypeFullScreen
                     adMoGoViewDelegate:self];
     interstitial.adWebBrowswerDelegate = self;
->>>>>>> 84a4808e694996004ce8c1b3c294bf34264c93eb
+
 }
 
 
