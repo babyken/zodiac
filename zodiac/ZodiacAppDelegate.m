@@ -14,6 +14,7 @@
 #import "ZodiacSelectViewController.h"
 #import "WebdataParser.h"
 
+
 @interface ZodiacAppDelegate ()
 
 
@@ -40,8 +41,18 @@
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainCenterVC];
     
+    // Customize the navigation Bar
+    if ([navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)] ) {
+        UIImage *image = [UIImage imageNamed:@"nav_bar_bg"];
+        [navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    }    
+
+    navigationController.navigationBar.tintColor = [UIColor colorWithRed:224.0/255 green:210.0/255 blue:232.0/255 alpha:1.0];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:navigationController
                                                             leftDrawerViewController:selectLeftVC];
+    [self.drawerController setMaximumLeftDrawerWidth:160.0];
     
     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];

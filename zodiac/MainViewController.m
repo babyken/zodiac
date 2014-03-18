@@ -9,7 +9,12 @@
 #import "MainViewController.h"
 #import "ZodiacAppDelegate.h"
 
+#import "PeriodSegmentView.h"
+#import "FateDetailView.h"
+
 @interface MainViewController ()
+
+@property (strong, nonatomic) FateDetailView *fateDetailView;
 
 @end
 
@@ -18,15 +23,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setNeedsStatusBarAppearanceUpdate];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    CGRect bounds = self.view.bounds;
     
     // init and adding the NavigationBar to the self.view
-//    [self.view addSubview:self.navTitleBar];
     
-    //TODO: REMOVE ME LATER Debug use
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor blackColor];
     
-    UIBarButtonItem *barBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleDone target:self action:@selector(menuBtnPress:)];
+    UIImage *imgBg = [UIImage imageNamed:@"main_bg"];
+    UIImageView *imgViewBg = [[UIImageView alloc] initWithFrame:(CGRect){{0.0, bounds.size.height - imgBg.size.height}, imgBg.size}];
+    imgViewBg.image = imgBg;
+    
+    [self.view addSubview:imgViewBg];
+    
+    
+    UIBarButtonItem *barBackButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_bar_btn_menu"]
+                                                                      style:UIBarButtonItemStyleDone
+                                                                     target:self action:@selector(menuBtnPress:)];
+
     [self.navigationItem setLeftBarButtonItem:barBackButton];
+    
+    
+    
+    // =========== Segment Control ============
+    PeriodSegmentView *periodSegmentView = [[PeriodSegmentView alloc] initWithFrame:(CGRect){{0.0, 0.0}, {bounds.size.width, 53.0}}
+                                                                   andSegmentTarget:self
+                                                                         withAction:@selector(periodSegmentValueChange:)];
+    
+    [self.view addSubview:periodSegmentView];
+    
+    _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - periodSegmentView.frame.size.height}}];
+    
+    [self.view addSubview:_fateDetailView];
 }
 
 
@@ -69,11 +98,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark -
 #pragma mark UI IBAction / Callback
 - (void)menuBtnPress:(UIBarButtonItem*)sender {
     ZodiacAppDelegate *appDelegate = (ZodiacAppDelegate*)[[UIApplication sharedApplication] delegate];
     [appDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+- (void)periodSegmentValueChange:(UISegmentedControl*)sender {
+    
+    NSLog(@"value change for segment control");
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            _fateDetailView.debugTextView.text = @"Daily Fate";
+            break;
+        case 1:
+            _fateDetailView.debugTextView.text = @"Weekly Fate";
+            break;
+        case 2:
+            _fateDetailView.debugTextView.text = @"Monthly Fate";
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 
