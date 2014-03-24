@@ -62,6 +62,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LOADZODIAC" object:@(indexPath.row)];
     ZodiacAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     [appDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
