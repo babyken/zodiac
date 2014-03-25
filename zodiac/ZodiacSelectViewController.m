@@ -64,6 +64,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LOADZODIAC" object:@(indexPath.row)];
     ZodiacAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     
     // Get the main view controller reference

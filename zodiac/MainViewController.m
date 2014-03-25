@@ -18,9 +18,11 @@
 #import "AdMoGoInterstitial.h"
 #import "AdMoGoInterstitialDelegate.h"
 
+#import "WebdataParser.h"
+
 @interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate>
 
-
+@property (nonatomic, strong) PeriodSegmentView *periodSegmentView;
 @property (strong, nonatomic) FateDetailView *fateDetailView;
 
 @end
@@ -29,11 +31,17 @@
 {
     AdMoGoView *adView;
     AdMoGoInterstitial *interstitial;
+    
+    int currentType;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadWebData:) name:@"LOADZODIAC" object:nil];
+    currentType = 1;
+    
     [self setNeedsStatusBarAppearanceUpdate];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     CGRect bounds = self.view.bounds;
@@ -57,22 +65,20 @@
     
     
     // =========== Segment Control ============
-    PeriodSegmentView *periodSegmentView = [[PeriodSegmentView alloc] initWithFrame:(CGRect){{0.0, 0.0}, {bounds.size.width, 53.0}}
+    _periodSegmentView = [[PeriodSegmentView alloc] initWithFrame:(CGRect){{0.0, 0.0}, {bounds.size.width, 53.0}}
                                                                    andSegmentTarget:self
                                                                          withAction:@selector(periodSegmentValueChange:)];
     
-    [self.view addSubview:periodSegmentView];
+    [self.view addSubview:_periodSegmentView];
     
-    _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - periodSegmentView.frame.size.height}}];
+    _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, _periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - _periodSegmentView.frame.size.height}}];
     
     [self.view addSubview:_fateDetailView];
 
     // banner ad at the bottom
     adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
     adView.adWebBrowswerDelegate = self;
-    adView.frame = CGRectMake(0, bounds.size.height - 50, 320, 50);
-    
-    adView.backgroundColor = [UIColor redColor];
+    adView.frame = CGRectMake(0, bounds.size.height - 100, 320, 50);
     
     [self.view addSubview:adView];
     
@@ -131,6 +137,12 @@
     return UIStatusBarStyleLightContent;
 }
 
+#pragma mark - notification
+- (void)loadWebData:(NSNotification*)sender
+{
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:[sender.object intValue] type:currentType];
+}
+
 #pragma mark -
 #pragma mark UI IBAction / Callback
 - (void)menuBtnPress:(UIBarButtonItem*)sender {
@@ -141,6 +153,7 @@
 - (void)periodSegmentValueChange:(UISegmentedControl*)sender {
     
     NSLog(@"value change for segment control");
+    currentType = sender.selectedSegmentIndex + 1;
     switch (sender.selectedSegmentIndex) {
         case 0:
             _fateDetailView.debugTextView.text = @"Daily Fate";
@@ -161,6 +174,11 @@
 
 #pragma mark - AdMoGoDelegate
 - (UIViewController*)viewControllerForPresentingModalView
+{
+    return self;
+}
+
+- (UIViewController*)viewControllerForPresentingInterstitialModalView
 {
     return self;
 }

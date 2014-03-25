@@ -17,7 +17,7 @@
  sign: BaiYang,JinNiu,ShuangZi, JuXie,ShiZi,ChuNv,TianCheng,TianXie,SheShou,MoJie,ShuiPing,ShuangYu
  type: 1- 日运 2- 周运 3- 月运
  */
-- (void)fetchHoroscopesWithSign:(NSString*)sign type:(int)type;
+- (void)fetchHoroscopesWithSign:(int)sign type:(int)type;
 
 /* 日运html解析 
  *@params: 

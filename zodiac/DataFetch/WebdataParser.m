@@ -31,9 +31,9 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
     return self;
 }
 
-- (void)fetchHoroscopesWithSign:(NSString*)sign type:(int)type
+- (void)fetchHoroscopesWithSign:(int)sign type:(int)type
 {
-    NSString *string = [NSString stringWithFormat:@"http://115.28.47.11/xingzuo/%@/YunShi_%d.json",sign,type];
+    NSString *string = [NSString stringWithFormat:@"http://115.28.47.11/xingzuo/%@/YunShi_%d.json",zodiacs[sign],type];
     NSURL *url = [NSURL URLWithString:string];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
