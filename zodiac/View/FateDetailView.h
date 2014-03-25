@@ -13,4 +13,7 @@
 // For debug use only, remove later
 @property (strong, nonatomic) UITextView *debugTextView;
 
+// For display detail
+@property (strong, nonatomic) UIWebView *zodiacDetailWebView;
+
 @end

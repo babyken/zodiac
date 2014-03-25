@@ -30,7 +30,11 @@
         _debugTextView.backgroundColor = [UIColor clearColor];
         _debugTextView.textColor = [UIColor whiteColor];
         
-        [_scrlView addSubview:_debugTextView];
+        _zodiacDetailWebView = [[UIWebView alloc] initWithFrame:(CGRect){{0, 0}, frame.size}];
+        
+        [_scrlView addSubview:_zodiacDetailWebView];
+        
+//        [_scrlView addSubview:_debugTextView];
         [self addSubview:_scrlView];
     }
     return self;

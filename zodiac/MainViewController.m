@@ -156,13 +156,15 @@
     currentType = sender.selectedSegmentIndex + 1;
     switch (sender.selectedSegmentIndex) {
         case 0:
-            _fateDetailView.debugTextView.text = @"Daily Fate";
+            [_fateDetailView.zodiacDetailWebView loadHTMLString:@"Daily Fate" baseURL:nil];
             break;
         case 1:
-            _fateDetailView.debugTextView.text = @"Weekly Fate";
+            [_fateDetailView.zodiacDetailWebView loadHTMLString:@"Weekly Fate" baseURL:nil];
+//            _fateDetailView.debugTextView.text = @"Weekly Fate";
             break;
         case 2:
-            _fateDetailView.debugTextView.text = @"Monthly Fate";
+            [_fateDetailView.zodiacDetailWebView loadHTMLString:@"Monthly Fate" baseURL:nil];
+//            _fateDetailView.debugTextView.text = @"Monthly Fate";
             
             break;
             
