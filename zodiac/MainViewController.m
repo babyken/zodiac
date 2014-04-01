@@ -110,6 +110,10 @@
                     adMoGoViewDelegate:self];
     interstitial.adWebBrowswerDelegate = self;
 
+    // ios7
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
 }
 
 
