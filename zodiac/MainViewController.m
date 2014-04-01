@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "ZodiacDetailViewController.h"
 #import "ZodiacAppDelegate.h"
 
 #import "PeriodSegmentView.h"
@@ -54,8 +55,12 @@ static NSArray *zodiacs = nil;
     currentSign = 0;
     _zodiacArray = [NSArray array];
     
-    [self setNeedsStatusBarAppearanceUpdate];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        [self setNeedsStatusBarAppearanceUpdate];
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
+
     CGRect bounds = self.view.bounds;
     
     // init and adding the NavigationBar to the self.view
@@ -227,6 +232,12 @@ static NSArray *zodiacs = nil;
                    constrainedToSize:CGSizeMake(300, 200)
                        lineBreakMode:NSLineBreakByWordWrapping];
     return size;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ZodiacDetailViewController *zodiacDetailVC = [[ZodiacDetailViewController alloc] init];
+    
+    [self.navigationController pushViewController:zodiacDetailVC animated:YES];
 }
 
 #pragma mark - AdMoGoDelegate
