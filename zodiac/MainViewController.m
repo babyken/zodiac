@@ -20,10 +20,12 @@
 
 #import "WebdataParser.h"
 
-@interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate>
+@interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) PeriodSegmentView *periodSegmentView;
 @property (strong, nonatomic) FateDetailView *fateDetailView;
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *zodiacArray;
 
 @end
 
@@ -33,6 +35,7 @@
     AdMoGoInterstitial *interstitial;
     
     int currentType;
+    int currentSign;
 }
 
 - (void)viewDidLoad
@@ -41,6 +44,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadWebData:) name:@"LOADZODIAC" object:nil];
     currentType = 1;
+    currentSign = 0;
+    _zodiacArray = [NSArray array];
     
     [self setNeedsStatusBarAppearanceUpdate];
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -71,9 +76,23 @@
     
     [self.view addSubview:_periodSegmentView];
     
-    _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, _periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - _periodSegmentView.frame.size.height}}];
+//    _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, _periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - _periodSegmentView.frame.size.height}}];
+//    
+//    [self.view addSubview:_fateDetailView];
     
-    [self.view addSubview:_fateDetailView];
+    // table
+    _tableView = [[UITableView alloc]initWithFrame:(CGRect){{0.0, _periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - _periodSegmentView.frame.size.height - 94 }}];
+    [self.view addSubview:_tableView];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.backgroundColor = [UIColor clearColor];
+    _tableView.opaque = NO;
+    
+    // initialize data
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:1 type:currentType Completion:^(id result) {
+        _zodiacArray = [NSArray arrayWithArray:result];
+        [_tableView reloadData];
+    }];
 
     // banner ad at the bottom
     adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
@@ -86,7 +105,7 @@
     interstitial = [[AdMoGoInterstitial alloc]
                     initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
                     isRefresh:YES
-                    adInterval:10
+                    adInterval:4
                     adType:AdViewTypeFullScreen
                     adMoGoViewDelegate:self];
     interstitial.adWebBrowswerDelegate = self;
@@ -140,7 +159,10 @@
 #pragma mark - notification
 - (void)loadWebData:(NSNotification*)sender
 {
-    [[WebdataParser sharedParser] fetchHoroscopesWithSign:[sender.object intValue] type:currentType];
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:(currentSign = [sender.object intValue]) type:(currentType = 1) Completion:^(id result) {
+        _zodiacArray = [NSArray arrayWithArray:result];
+        [_tableView reloadData];
+    }];
 }
 
 #pragma mark -
@@ -154,23 +176,31 @@
     
     NSLog(@"value change for segment control");
     currentType = sender.selectedSegmentIndex + 1;
-    switch (sender.selectedSegmentIndex) {
-        case 0:
-            [_fateDetailView.zodiacDetailWebView loadHTMLString:@"Daily Fate" baseURL:nil];
-            break;
-        case 1:
-            [_fateDetailView.zodiacDetailWebView loadHTMLString:@"Weekly Fate" baseURL:nil];
-//            _fateDetailView.debugTextView.text = @"Weekly Fate";
-            break;
-        case 2:
-            [_fateDetailView.zodiacDetailWebView loadHTMLString:@"Monthly Fate" baseURL:nil];
-//            _fateDetailView.debugTextView.text = @"Monthly Fate";
-            
-            break;
-            
-        default:
-            break;
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:1 type:currentType Completion:^(id result) {
+        _zodiacArray = [NSArray arrayWithArray:result];
+        [_tableView reloadData];
+    }];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _zodiacArray.count;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* cell_identifier = @"cell_identifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell_identifier];
     }
+    cell.textLabel.text = _zodiacArray[indexPath.row][@"title"];
+    return cell;
 }
 
 

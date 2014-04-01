@@ -31,7 +31,7 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
     return self;
 }
 
-- (void)fetchHoroscopesWithSign:(int)sign type:(int)type
+- (void)fetchHoroscopesWithSign:(int)sign type:(int)type Completion:(void(^)(id result))completion
 {
     NSString *string = [NSString stringWithFormat:@"http://115.28.47.11/xingzuo/%@/YunShi_%d.json",zodiacs[sign],type];
     NSURL *url = [NSURL URLWithString:string];
@@ -43,7 +43,9 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        NSLog(@"%@",responseObject);
+        if (completion) {
+            completion(responseObject);
+        }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
