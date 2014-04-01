@@ -30,6 +30,8 @@
 
 @end
 
+static NSArray *zodiacs = nil;
+
 @implementation MainViewController
 {
     AdMoGoView *adView;
@@ -42,6 +44,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],UITextAttributeFont: [UIFont boldSystemFontOfSize:23]};
+    
+    zodiacs = @[@"白羊",@"金牛",@"双子",@"巨蟹",@"狮子",@"处女",@"天秤",@"天蝎",@"射手",@"摩羯",@"水瓶",@"双鱼"];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadWebData:) name:@"LOADZODIAC" object:nil];
     currentType = 1;
@@ -90,7 +96,8 @@
     _tableView.opaque = NO;
     
     // initialize data
-    [[WebdataParser sharedParser] fetchHoroscopesWithSign:1 type:currentType Completion:^(id result) {
+    self.title = zodiacs[currentSign];
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:currentType Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
     }];
@@ -164,7 +171,8 @@
 #pragma mark - notification
 - (void)loadWebData:(NSNotification*)sender
 {
-    [[WebdataParser sharedParser] fetchHoroscopesWithSign:(currentSign = [sender.object intValue]) type:(currentType = 1) Completion:^(id result) {
+    self.title = zodiacs[currentSign = [sender.object intValue]];
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:(currentType = 1) Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
     }];
@@ -181,7 +189,7 @@
     
     NSLog(@"value change for segment control");
     currentType = sender.selectedSegmentIndex + 1;
-    [[WebdataParser sharedParser] fetchHoroscopesWithSign:1 type:currentType Completion:^(id result) {
+    [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:currentType Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
     }];
