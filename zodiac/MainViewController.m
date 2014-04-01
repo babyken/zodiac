@@ -176,6 +176,7 @@ static NSArray *zodiacs = nil;
 #pragma mark - notification
 - (void)loadWebData:(NSNotification*)sender
 {
+    [self.navigationController popToRootViewControllerAnimated:NO];
     self.title = zodiacs[currentSign = [sender.object intValue]];
     [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:(currentType = 1) Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
@@ -236,7 +237,8 @@ static NSArray *zodiacs = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ZodiacDetailViewController *zodiacDetailVC = [[ZodiacDetailViewController alloc] init];
-    
+    zodiacDetailVC.type = currentType;
+    [zodiacDetailVC setLink:_zodiacArray[indexPath.row][@"link"]];
     [self.navigationController pushViewController:zodiacDetailVC animated:YES];
 }
 

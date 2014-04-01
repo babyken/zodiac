@@ -7,6 +7,7 @@
 //
 
 #import "ZodiacDetailViewController.h"
+#import "WebdataParser.h"
 
 @interface ZodiacDetailViewController ()
 
@@ -21,6 +22,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        _linkURL = @"";
     }
     return self;
 }
@@ -36,7 +38,7 @@
     
     CGRect bounds = self.view.bounds;
     
-    _zodiacInfoWebView = [[UIWebView alloc] initWithFrame:(CGRect){{0, 0}, bounds.size}];
+    _zodiacInfoWebView = [[UIWebView alloc] initWithFrame:(CGRect){{0, 0}, {bounds.size.width,bounds.size.height - 44}}];
     _zodiacInfoWebView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_zodiacInfoWebView];
     
@@ -58,5 +60,36 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)setLink:(NSString *)linkURL
+{
+    _linkURL = linkURL;
+    
+    if (_type == 0) {
+        [[WebdataParser sharedParser]htmlParserForDailyHoroscope:linkURL Completion:^(id result) {
+            [_zodiacInfoWebView loadHTMLString:result baseURL:nil];
+        } failure:^(NSError *error) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络好像不给力..."
+                                                                message:[error localizedDescription]
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"知道了"
+                                                      otherButtonTitles:nil];
+            [alertView show];
+        }];
+    }
+    
+    else {
+        [[WebdataParser sharedParser] htmlParserForWeeklyOrMonthlyHoroscope:linkURL page:1 initialStr:@"" Completion:^(id result) {
+            [_zodiacInfoWebView loadHTMLString:result baseURL:nil];
+        } failure:^(NSError *error) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络好像不给力..."
+                                                                message:[error localizedDescription]
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"知道了"
+                                                      otherButtonTitles:nil];
+            [alertView show];
+        }];
+    }
+}
 
 @end

@@ -10,4 +10,7 @@
 
 @interface ZodiacDetailViewController : UIViewController
 
+@property (nonatomic,strong,setter = setLink:) NSString* linkURL;
+@property (nonatomic,readwrite) int type;
+
 @end
