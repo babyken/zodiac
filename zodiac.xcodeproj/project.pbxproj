@@ -26,6 +26,7 @@
 		0680CA3A18CEB13D00489E32 /* ZodiacSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680CA3918CEB13D00489E32 /* ZodiacSelectViewController.m */; };
 		8185203818E1B89D00036A60 /* ZodiacTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185203718E1B89D00036A60 /* ZodiacTableViewCell.m */; };
 		8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A018CDA6310095AF79 /* WebdataParser.m */; };
+		888C2FD518EA5F3C00A436F4 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C2FD418EA5F3C00A436F4 /* MainTableViewCell.m */; };
 		88CA25BD18D68C2500C5566B /* adsmogo_fsclosebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA24F518D68C2500C5566B /* adsmogo_fsclosebtn.png */; };
 		88CA25BE18D68C2500C5566B /* adsmogo_fsclosebtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA24F618D68C2500C5566B /* adsmogo_fsclosebtn@2x.png */; };
 		88CA25BF18D68C2500C5566B /* adsMoGoFullScreen.html in Resources */ = {isa = PBXBuildFile; fileRef = 88CA24F718D68C2500C5566B /* adsMoGoFullScreen.html */; };
@@ -227,6 +228,8 @@
 		8185203718E1B89D00036A60 /* ZodiacTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZodiacTableViewCell.m; path = View/ZodiacTableViewCell.m; sourceTree = "<group>"; };
 		8889F59F18CDA6310095AF79 /* WebdataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebdataParser.h; sourceTree = "<group>"; };
 		8889F5A018CDA6310095AF79 /* WebdataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebdataParser.m; sourceTree = "<group>"; };
+		888C2FD318EA5F3C00A436F4 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		888C2FD418EA5F3C00A436F4 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		88CA24F518D68C2500C5566B /* adsmogo_fsclosebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adsmogo_fsclosebtn.png; sourceTree = "<group>"; };
 		88CA24F618D68C2500C5566B /* adsmogo_fsclosebtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adsmogo_fsclosebtn@2x.png"; sourceTree = "<group>"; };
 		88CA24F718D68C2500C5566B /* adsMoGoFullScreen.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = adsMoGoFullScreen.html; sourceTree = "<group>"; };
@@ -513,6 +516,8 @@
 				0641852318D6CE060012403C /* FateDetailView.m */,
 				8185203618E1B89D00036A60 /* ZodiacTableViewCell.h */,
 				8185203718E1B89D00036A60 /* ZodiacTableViewCell.m */,
+				888C2FD318EA5F3C00A436F4 /* MainTableViewCell.h */,
+				888C2FD418EA5F3C00A436F4 /* MainTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1297,6 +1302,7 @@
 				0641852418D6CE060012403C /* FateDetailView.m in Sources */,
 				88CA26D818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m in Sources */,
 				88CA263318D68C2500C5566B /* AdMoGoAdapterMobiSage.m in Sources */,
+				888C2FD518EA5F3C00A436F4 /* MainTableViewCell.m in Sources */,
 				88CA261A18D68C2500C5566B /* AdMoGoAdapterAdwo.m in Sources */,
 				88CA263518D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.m in Sources */,
 				0680CA1818CD748600489E32 /* MainViewController.m in Sources */,

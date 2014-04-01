@@ -52,14 +52,13 @@
 
 - (void)setupZodiacTable {
     CGRect bounds = self.view.bounds;
-    CGRect tblFrame = CGRectMake(0, 0.0f, CGRectGetWidth(bounds), CGRectGetHeight(bounds));
+    CGRect tblFrame = CGRectMake(0,44.0f, CGRectGetWidth(bounds), CGRectGetHeight(bounds));
     
     UITableView* tblZodiac = [[UITableView alloc] initWithFrame:tblFrame style:UITableViewStylePlain];
     tblZodiac.delegate = self;
     tblZodiac.dataSource = self;
     tblZodiac.separatorStyle = UITableViewCellSeparatorStyleNone;
     //    self.tblBetfeeds.backgroundColor = [UIColor whiteColor];
-    tblZodiac.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:tblZodiac];
 }

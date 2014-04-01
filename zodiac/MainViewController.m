@@ -11,6 +11,7 @@
 
 #import "PeriodSegmentView.h"
 #import "FateDetailView.h"
+#import "MainTableViewCell.h"
 
 #import "AdMoGoDelegateProtocol.h" 
 #import "AdMoGoView.h" 
@@ -199,14 +200,26 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString* cell_identifier = @"cell_identifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_identifier];
+    MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_identifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell_identifier];
+        cell = [[MainTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell_identifier];
     }
-    cell.textLabel.text = _zodiacArray[indexPath.row][@"title"];
+    [cell setTitle:_zodiacArray[indexPath.row][@"title"]];
     return cell;
 }
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self getTextSize:_zodiacArray[indexPath.row][@"title"]].height + 10;
+}
 
+- (CGSize)getTextSize:(NSString*)text
+{
+    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:20]
+                   constrainedToSize:CGSizeMake(300, 200)
+                       lineBreakMode:NSLineBreakByWordWrapping];
+    return size;
+}
 
 #pragma mark - AdMoGoDelegate
 - (UIViewController*)viewControllerForPresentingModalView
