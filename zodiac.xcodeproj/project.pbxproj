@@ -28,6 +28,9 @@
 		8185203818E1B89D00036A60 /* ZodiacTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185203718E1B89D00036A60 /* ZodiacTableViewCell.m */; };
 		8889F5A118CDA6310095AF79 /* WebdataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F5A018CDA6310095AF79 /* WebdataParser.m */; };
 		888C2FD518EA5F3C00A436F4 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C2FD418EA5F3C00A436F4 /* MainTableViewCell.m */; };
+		888C2FE718EA935900A436F4 /* AdMoGoAdapterInmobiSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C2FD918EA935900A436F4 /* AdMoGoAdapterInmobiSDK.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		888C2FE818EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C2FDB18EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		888C2FE918EA935900A436F4 /* libInMobi-4.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888C2FE618EA935900A436F4 /* libInMobi-4.1.0.a */; };
 		88CA25BD18D68C2500C5566B /* adsmogo_fsclosebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA24F518D68C2500C5566B /* adsmogo_fsclosebtn.png */; };
 		88CA25BE18D68C2500C5566B /* adsmogo_fsclosebtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA24F618D68C2500C5566B /* adsmogo_fsclosebtn@2x.png */; };
 		88CA25BF18D68C2500C5566B /* adsMoGoFullScreen.html in Resources */ = {isa = PBXBuildFile; fileRef = 88CA24F718D68C2500C5566B /* adsMoGoFullScreen.html */; };
@@ -233,6 +236,20 @@
 		8889F5A018CDA6310095AF79 /* WebdataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebdataParser.m; sourceTree = "<group>"; };
 		888C2FD318EA5F3C00A436F4 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		888C2FD418EA5F3C00A436F4 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		888C2FD818EA935900A436F4 /* AdMoGoAdapterInmobiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterInmobiSDK.h; sourceTree = "<group>"; };
+		888C2FD918EA935900A436F4 /* AdMoGoAdapterInmobiSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterInmobiSDK.m; sourceTree = "<group>"; };
+		888C2FDA18EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterInmobiSDKFullScreen.h; sourceTree = "<group>"; };
+		888C2FDB18EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterInmobiSDKFullScreen.m; sourceTree = "<group>"; };
+		888C2FDD18EA935900A436F4 /* IMBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBanner.h; sourceTree = "<group>"; };
+		888C2FDE18EA935900A436F4 /* IMBannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBannerDelegate.h; sourceTree = "<group>"; };
+		888C2FDF18EA935900A436F4 /* IMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMError.h; sourceTree = "<group>"; };
+		888C2FE018EA935900A436F4 /* IMInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInterstitial.h; sourceTree = "<group>"; };
+		888C2FE118EA935900A436F4 /* IMInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInterstitialDelegate.h; sourceTree = "<group>"; };
+		888C2FE218EA935900A436F4 /* IMNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNative.h; sourceTree = "<group>"; };
+		888C2FE318EA935900A436F4 /* IMNativeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNativeDelegate.h; sourceTree = "<group>"; };
+		888C2FE418EA935900A436F4 /* InMobi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMobi.h; sourceTree = "<group>"; };
+		888C2FE518EA935900A436F4 /* InMobiAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMobiAnalytics.h; sourceTree = "<group>"; };
+		888C2FE618EA935900A436F4 /* libInMobi-4.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInMobi-4.1.0.a"; sourceTree = "<group>"; };
 		88CA24F518D68C2500C5566B /* adsmogo_fsclosebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adsmogo_fsclosebtn.png; sourceTree = "<group>"; };
 		88CA24F618D68C2500C5566B /* adsmogo_fsclosebtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adsmogo_fsclosebtn@2x.png"; sourceTree = "<group>"; };
 		88CA24F718D68C2500C5566B /* adsMoGoFullScreen.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = adsMoGoFullScreen.html; sourceTree = "<group>"; };
@@ -458,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88CA266F18D68CE800C5566B /* EventKit.framework in Frameworks */,
+				888C2FE918EA935900A436F4 /* libInMobi-4.1.0.a in Frameworks */,
 				88CA266D18D68CE300C5566B /* MessageUI.framework in Frameworks */,
 				88CA266B18D68CDC00C5566B /* QuartzCore.framework in Frameworks */,
 				88CA266918D68CD500C5566B /* AudioToolbox.framework in Frameworks */,
@@ -640,6 +658,43 @@
 				8889F5A018CDA6310095AF79 /* WebdataParser.m */,
 			);
 			path = DataFetch;
+			sourceTree = "<group>";
+		};
+		888C2FD618EA935900A436F4 /* Inmobi_SDK_410 */ = {
+			isa = PBXGroup;
+			children = (
+				888C2FD718EA935900A436F4 /* AdsMoGoAdapter */,
+				888C2FDC18EA935900A436F4 /* Libs */,
+			);
+			path = Inmobi_SDK_410;
+			sourceTree = "<group>";
+		};
+		888C2FD718EA935900A436F4 /* AdsMoGoAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				888C2FD818EA935900A436F4 /* AdMoGoAdapterInmobiSDK.h */,
+				888C2FD918EA935900A436F4 /* AdMoGoAdapterInmobiSDK.m */,
+				888C2FDA18EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.h */,
+				888C2FDB18EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.m */,
+			);
+			path = AdsMoGoAdapter;
+			sourceTree = "<group>";
+		};
+		888C2FDC18EA935900A436F4 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				888C2FDD18EA935900A436F4 /* IMBanner.h */,
+				888C2FDE18EA935900A436F4 /* IMBannerDelegate.h */,
+				888C2FDF18EA935900A436F4 /* IMError.h */,
+				888C2FE018EA935900A436F4 /* IMInterstitial.h */,
+				888C2FE118EA935900A436F4 /* IMInterstitialDelegate.h */,
+				888C2FE218EA935900A436F4 /* IMNative.h */,
+				888C2FE318EA935900A436F4 /* IMNativeDelegate.h */,
+				888C2FE418EA935900A436F4 /* InMobi.h */,
+				888C2FE518EA935900A436F4 /* InMobiAnalytics.h */,
+				888C2FE618EA935900A436F4 /* libInMobi-4.1.0.a */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 		88CA24F318D68C2500C5566B /* AdsMoGoRes */ = {
@@ -1039,6 +1094,7 @@
 		88EDE8A618D045FF00D444D5 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				888C2FD618EA935900A436F4 /* Inmobi_SDK_410 */,
 				88CA26C218D6ECAE00C5566B /* DoMob_SDK_410 */,
 				88CA24F318D68C2500C5566B /* AdsMoGoRes */,
 				88CA255618D68C2500C5566B /* AdsMoGoSDK */,
@@ -1294,6 +1350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88CA263B18D68C2500C5566B /* Reachability.m in Sources */,
+				888C2FE718EA935900A436F4 /* AdMoGoAdapterInmobiSDK.m in Sources */,
 				88CA261B18D68C2500C5566B /* AdMoGoAdapterAdwoFullAd.m in Sources */,
 				88CA26D618D6ECAE00C5566B /* AdMoGoAdapterDoMob.m in Sources */,
 				0680CA3A18CEB13D00489E32 /* ZodiacSelectViewController.m in Sources */,
@@ -1305,6 +1362,7 @@
 				0680CA0E18CD748600489E32 /* main.m in Sources */,
 				8185203818E1B89D00036A60 /* ZodiacTableViewCell.m in Sources */,
 				0641852018D6A1830012403C /* PeriodSegmentView.m in Sources */,
+				888C2FE818EA935900A436F4 /* AdMoGoAdapterInmobiSDKFullScreen.m in Sources */,
 				0641852418D6CE060012403C /* FateDetailView.m in Sources */,
 				88CA26D818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m in Sources */,
 				88CA263318D68C2500C5566B /* AdMoGoAdapterMobiSage.m in Sources */,
@@ -1456,6 +1514,7 @@
 					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/64-bit",
 					"$(PROJECT_DIR)/zodiac/Ads/Mobisage_SDK_541/MobiSageSDK",
 					"$(PROJECT_DIR)/zodiac/Ads/DoMob_SDK_410/DomobAdSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/Inmobi_SDK_410/Libs",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1499,6 +1558,7 @@
 					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/64-bit",
 					"$(PROJECT_DIR)/zodiac/Ads/Mobisage_SDK_541/MobiSageSDK",
 					"$(PROJECT_DIR)/zodiac/Ads/DoMob_SDK_410/DomobAdSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/Inmobi_SDK_410/Libs",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
