@@ -142,12 +142,9 @@
 		88CA262E18D68C2500C5566B /* adwo_share2sina.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA25A518D68C2500C5566B /* adwo_share2sina.png */; };
 		88CA262F18D68C2500C5566B /* adwo_takephoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA25A618D68C2500C5566B /* adwo_takephoto.png */; };
 		88CA263018D68C2500C5566B /* adwo_uploadProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 88CA25A718D68C2500C5566B /* adwo_uploadProgress.png */; };
-		88CA263118D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.key in Resources */ = {isa = PBXBuildFile; fileRef = 88CA25A918D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.key */; };
-		88CA263218D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88CA25AA18D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.pdf */; };
 		88CA263318D68C2500C5566B /* AdMoGoAdapterMobiSage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA25AE18D68C2500C5566B /* AdMoGoAdapterMobiSage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		88CA263418D68C2500C5566B /* AdMoGoAdapterMobiSageFullAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA25B018D68C2500C5566B /* AdMoGoAdapterMobiSageFullAd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		88CA263518D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA25B218D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		88CA263618D68C2500C5566B /* mobiSage_iOS_SDK.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88CA25B318D68C2500C5566B /* mobiSage_iOS_SDK.pdf */; };
 		88CA263718D68C2500C5566B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA25B618D68C2500C5566B /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		88CA263818D68C2500C5566B /* libMobiSageRecommend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA25B718D68C2500C5566B /* libMobiSageRecommend.a */; };
 		88CA263918D68C2500C5566B /* libMobiSageSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA25B818D68C2500C5566B /* libMobiSageSDK.a */; };
@@ -185,8 +182,6 @@
 		88CA26D818D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CA26C918D6ECAE00C5566B /* AdMoGoAdapterDoMobSplash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		88CA26D918D6ECAE00C5566B /* DomobAdSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88CA26D218D6ECAE00C5566B /* DomobAdSDKBundle.bundle */; };
 		88CA26DA18D6ECAE00C5566B /* libDomobAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA26D318D6ECAE00C5566B /* libDomobAdSDK.a */; };
-		88CA26DB18D6ECAF00C5566B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 88CA26D418D6ECAE00C5566B /* README.txt */; };
-		88CA26DC18D6ECAF00C5566B /* UserGuide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88CA26D518D6ECAE00C5566B /* UserGuide.pdf */; };
 		D3DC15DD18524DC69585A8DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00935779812E49A7B2F98AA1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -407,15 +402,12 @@
 		88CA25A518D68C2500C5566B /* adwo_share2sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adwo_share2sina.png; sourceTree = "<group>"; };
 		88CA25A618D68C2500C5566B /* adwo_takephoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adwo_takephoto.png; sourceTree = "<group>"; };
 		88CA25A718D68C2500C5566B /* adwo_uploadProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adwo_uploadProgress.png; sourceTree = "<group>"; };
-		88CA25A918D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adwo iOS SDK5.0 Programming Guide.key"; sourceTree = "<group>"; };
-		88CA25AA18D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Adwo iOS SDK5.0 Programming Guide.pdf"; sourceTree = "<group>"; };
 		88CA25AD18D68C2500C5566B /* AdMoGoAdapterMobiSage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterMobiSage.h; sourceTree = "<group>"; };
 		88CA25AE18D68C2500C5566B /* AdMoGoAdapterMobiSage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterMobiSage.m; sourceTree = "<group>"; };
 		88CA25AF18D68C2500C5566B /* AdMoGoAdapterMobiSageFullAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterMobiSageFullAd.h; sourceTree = "<group>"; };
 		88CA25B018D68C2500C5566B /* AdMoGoAdapterMobiSageFullAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterMobiSageFullAd.m; sourceTree = "<group>"; };
 		88CA25B118D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMoGoAdapterMobiSageSplash.h; sourceTree = "<group>"; };
 		88CA25B218D68C2500C5566B /* AdMoGoAdapterMobiSageSplash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMoGoAdapterMobiSageSplash.m; sourceTree = "<group>"; };
-		88CA25B318D68C2500C5566B /* mobiSage_iOS_SDK.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mobiSage_iOS_SDK.pdf; sourceTree = "<group>"; };
 		88CA25B518D68C2500C5566B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		88CA25B618D68C2500C5566B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		88CA25B718D68C2500C5566B /* libMobiSageRecommend.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobiSageRecommend.a; sourceTree = "<group>"; };
@@ -465,8 +457,6 @@
 		88CA26D018D6ECAE00C5566B /* DMTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTools.h; sourceTree = "<group>"; };
 		88CA26D218D6ECAE00C5566B /* DomobAdSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DomobAdSDKBundle.bundle; sourceTree = "<group>"; };
 		88CA26D318D6ECAE00C5566B /* libDomobAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDomobAdSDK.a; sourceTree = "<group>"; };
-		88CA26D418D6ECAE00C5566B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		88CA26D518D6ECAE00C5566B /* UserGuide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = UserGuide.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -937,7 +927,6 @@
 			children = (
 				88CA258818D68C2500C5566B /* AdsMoGoAdapter */,
 				88CA258F18D68C2500C5566B /* adwoSDKLib */,
-				88CA25A818D68C2500C5566B /* Docs */,
 			);
 			path = Adwo_SDK_500;
 			sourceTree = "<group>";
@@ -997,20 +986,10 @@
 			path = res;
 			sourceTree = "<group>";
 		};
-		88CA25A818D68C2500C5566B /* Docs */ = {
-			isa = PBXGroup;
-			children = (
-				88CA25A918D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.key */,
-				88CA25AA18D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.pdf */,
-			);
-			path = Docs;
-			sourceTree = "<group>";
-		};
 		88CA25AB18D68C2500C5566B /* Mobisage_SDK_541 */ = {
 			isa = PBXGroup;
 			children = (
 				88CA25AC18D68C2500C5566B /* AdsMoGoAdapter */,
-				88CA25B318D68C2500C5566B /* mobiSage_iOS_SDK.pdf */,
 				88CA25B418D68C2500C5566B /* MobiSageSDK */,
 			);
 			path = Mobisage_SDK_541;
@@ -1049,8 +1028,6 @@
 			children = (
 				88CA26C318D6ECAE00C5566B /* AdsMoGoAdapter */,
 				88CA26CA18D6ECAE00C5566B /* DomobAdSDK */,
-				88CA26D418D6ECAE00C5566B /* README.txt */,
-				88CA26D518D6ECAE00C5566B /* UserGuide.pdf */,
 			);
 			path = DoMob_SDK_410;
 			sourceTree = "<group>";
@@ -1199,12 +1176,10 @@
 				88CA25C818D68C2500C5566B /* adsmogo_corner@2x.png in Resources */,
 				88CA26D918D6ECAE00C5566B /* DomobAdSDKBundle.bundle in Resources */,
 				88CA262118D68C2500C5566B /* adwo_audio_icon.png in Resources */,
-				88CA26DB18D6ECAF00C5566B /* README.txt in Resources */,
 				88CA25E918D68C2500C5566B /* webview_bar_next_hover@2x.png in Resources */,
 				88CA25F218D68C2500C5566B /* webview_bar_close_hover_ipad@2x.png in Resources */,
 				88CA263A18D68C2500C5566B /* MobiSageRecommendBundle.bundle in Resources */,
 				88CA25EE18D68C2500C5566B /* webview_bar_share@2x.png in Resources */,
-				88CA263118D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.key in Resources */,
 				88CA25E518D68C2500C5566B /* webview_bar_close@2x.png in Resources */,
 				88CA261218D68C2500C5566B /* webview_bar_refresh.png in Resources */,
 				88CA25F118D68C2500C5566B /* webview_bar_back_ipad@2x.png in Resources */,
@@ -1255,7 +1230,6 @@
 				88CA25D818D68C2500C5566B /* adsmogo_corner.png in Resources */,
 				88CA263018D68C2500C5566B /* adwo_uploadProgress.png in Resources */,
 				88CA25E018D68C2500C5566B /* shareviewhead_icon@2x.png in Resources */,
-				88CA263218D68C2500C5566B /* Adwo iOS SDK5.0 Programming Guide.pdf in Resources */,
 				88CA25DF18D68C2500C5566B /* shareviewhead_bg@2x.png in Resources */,
 				88CA261418D68C2500C5566B /* AdMoGoWebBrowser.xib in Resources */,
 				88CA262318D68C2500C5566B /* adwo_audioCancel.png in Resources */,
@@ -1285,10 +1259,8 @@
 				88CA25E218D68C2500C5566B /* webview_bar_back@2x.png in Resources */,
 				88CA25D218D68C2500C5566B /* download-728x90.gif in Resources */,
 				88CA260818D68C2500C5566B /* shareviewhead_bg.png in Resources */,
-				88CA263618D68C2500C5566B /* mobiSage_iOS_SDK.pdf in Resources */,
 				88CA25E818D68C2500C5566B /* webview_bar_next_grey@2x.png in Resources */,
 				88CA25C918D68C2500C5566B /* adsmogo_picrollbg@2x.png in Resources */,
-				88CA26DC18D6ECAF00C5566B /* UserGuide.pdf in Resources */,
 				88CA25D318D68C2500C5566B /* website-320x50.gif in Resources */,
 				0680CA0C18CD748600489E32 /* InfoPlist.strings in Resources */,
 				88CA25F018D68C2500C5566B /* webview_bar_back_grey_ipad@2x.png in Resources */,
