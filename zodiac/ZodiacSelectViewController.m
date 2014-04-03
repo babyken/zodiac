@@ -41,6 +41,7 @@
     _aryZodiac = @[@"白羊座", @"金牛座", @"双子座", @"巨蟹座", @"狮子座", @"处女座", @"天秤座", @"天蝎座", @"射手座", @"摩羯座", @"水瓶座", @"双鱼座"];
     _aryZodiacImgName = @[@"aries", @"taurus", @"gemini", @"cancer", @"leo", @"virgo", @"libra", @"scorpio", @"sagittarius", @"capricorn", @"aquarius", @"pisces"];
     
+    self.view.backgroundColor = [UIColor blackColor];
     [self setupZodiacTable];
 }
 
@@ -52,7 +53,7 @@
 
 - (void)setupZodiacTable {
     CGRect bounds = self.view.bounds;
-    CGRect tblFrame = CGRectMake(0,44.0f, CGRectGetWidth(bounds), CGRectGetHeight(bounds));
+    CGRect tblFrame = CGRectMake(0,44.0f, CGRectGetWidth(bounds), CGRectGetHeight(bounds)-44.0);
     
     UITableView* tblZodiac = [[UITableView alloc] initWithFrame:tblFrame style:UITableViewStylePlain];
     tblZodiac.delegate = self;

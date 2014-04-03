@@ -39,7 +39,7 @@
     CGRect bounds = self.view.bounds;
     
     _zodiacInfoWebView = [[UIWebView alloc] initWithFrame:(CGRect){{0, 0}, {bounds.size.width,bounds.size.height - 44}}];
-    _zodiacInfoWebView.backgroundColor = [UIColor redColor];
+    _zodiacInfoWebView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:_zodiacInfoWebView];
     
 }
