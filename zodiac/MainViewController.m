@@ -13,6 +13,7 @@
 #import "PeriodSegmentView.h"
 #import "FateDetailView.h"
 #import "MainTableViewCell.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #import "AdMoGoDelegateProtocol.h" 
 #import "AdMoGoView.h" 
@@ -37,6 +38,8 @@ static NSArray *zodiacs = nil;
 {
     AdMoGoView *adView;
     AdMoGoInterstitial *interstitial;
+    
+    MBProgressHUD *_hud;
     
     int currentType;
     int currentSign;
@@ -178,9 +181,16 @@ static NSArray *zodiacs = nil;
 {
     [self.navigationController popToRootViewControllerAnimated:NO];
     self.title = zodiacs[currentSign = [sender.object intValue]];
+    
+    // Loading indicator
+    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+
+    _hud.labelText = @"下載中";
+    
     [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:(currentType = 1) Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
+        [_hud hide:YES];
     }];
 }
 

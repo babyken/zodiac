@@ -18,6 +18,7 @@ PODS:
   - AFNetworking/UIKit (2.2.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - MBProgressHUD (0.8)
   - MMDrawerController (0.5.3):
     - MMDrawerController/Core
     - MMDrawerController/MMDrawerBarButtonItem
@@ -34,11 +35,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - MBProgressHUD
   - MMDrawerController
   - Ono
 
 SPEC CHECKSUMS:
   AFNetworking: e8cfd8f3fe3bfe19124a0cc63f4d45752d892a56
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   MMDrawerController: 4445e1927e8947b7e2382136c9b7109840efbfb9
   Ono: f138d4bcb71f38618ee8c3dd2b553841fc7990ac
 

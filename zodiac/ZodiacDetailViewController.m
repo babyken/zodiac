@@ -8,8 +8,12 @@
 
 #import "ZodiacDetailViewController.h"
 #import "WebdataParser.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface ZodiacDetailViewController ()
+{
+    MBProgressHUD *_hud;
+}
 
 @property (strong, nonatomic)UIWebView *zodiacInfoWebView;
 
@@ -65,9 +69,14 @@
 {
     _linkURL = linkURL;
     
+    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    _hud.labelText = @"下載中";
+    
     if (_type == 0) {
         [[WebdataParser sharedParser]htmlParserForDailyHoroscope:linkURL Completion:^(id result) {
             [_zodiacInfoWebView loadHTMLString:result baseURL:nil];
+            [_hud hide:YES];
         } failure:^(NSError *error) {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络好像不给力..."
                                                                 message:[error localizedDescription]
@@ -81,6 +90,7 @@
     else {
         [[WebdataParser sharedParser] htmlParserForWeeklyOrMonthlyHoroscope:linkURL page:1 initialStr:@"" Completion:^(id result) {
             [_zodiacInfoWebView loadHTMLString:result baseURL:nil];
+            [_hud hide:YES];
         } failure:^(NSError *error) {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络好像不给力..."
                                                                 message:[error localizedDescription]

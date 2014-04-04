@@ -72,12 +72,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"LOADZODIAC" object:@(indexPath.row)];
     ZodiacAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     
-    // Get the main view controller reference
-    MainViewController *mainVC = (MainViewController*)appDelegate.drawerController.centerViewController;
-    
-    // TODO: 冰慧 Main VC reload data here
-    // Check is user select another zodiac before reload
-    
     [appDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
