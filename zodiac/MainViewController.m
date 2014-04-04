@@ -109,6 +109,9 @@ static NSArray *zodiacs = nil;
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
     }];
+    
+    // interstitial ad
+    [self performSelector:@selector(initInterstitial) withObject:nil afterDelay:2];
 
     // banner ad at the bottom
     adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
@@ -116,15 +119,6 @@ static NSArray *zodiacs = nil;
     adView.frame = CGRectMake(0, bounds.size.height - 100, 320, 50);
     
     [self.view addSubview:adView];
-    
-    // interstitial ad
-    interstitial = [[AdMoGoInterstitial alloc]
-                    initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
-                    isRefresh:YES
-                    adInterval:4
-                    adType:AdViewTypeFullScreen
-                    adMoGoViewDelegate:self];
-    interstitial.adWebBrowswerDelegate = self;
 
     // ios7
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
@@ -132,6 +126,10 @@ static NSArray *zodiacs = nil;
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 
 #pragma mark -
 #pragma mark UI init
@@ -174,6 +172,22 @@ static NSArray *zodiacs = nil;
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
+}
+
+- (void)initInterstitial
+{
+    if (interstitial) {
+        [interstitial stopInterstitial];
+        interstitial = nil;
+    }
+        interstitial = [[AdMoGoInterstitial alloc]
+                        initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
+                        isRefresh:YES
+                        adInterval:20
+                        adType:AdViewTypeFullScreen
+                        adMoGoViewDelegate:self];
+        interstitial.adWebBrowswerDelegate = self;
+    
 }
 
 #pragma mark - notification
@@ -250,6 +264,8 @@ static NSArray *zodiacs = nil;
     zodiacDetailVC.type = currentType;
     [zodiacDetailVC setLink:_zodiacArray[indexPath.row][@"link"]];
     [self.navigationController pushViewController:zodiacDetailVC animated:YES];
+    
+    [self initInterstitial];
 }
 
 #pragma mark - AdMoGoDelegate
