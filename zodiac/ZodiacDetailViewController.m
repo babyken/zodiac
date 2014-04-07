@@ -73,7 +73,7 @@
     
     _hud.labelText = @"下載中";
     
-    if (_type == 0) {
+    if (_type == 1) {
         [[WebdataParser sharedParser]htmlParserForDailyHoroscope:linkURL Completion:^(id result) {
             [_zodiacInfoWebView loadHTMLString:result baseURL:nil];
             [_hud hide:YES];

@@ -95,6 +95,8 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
             
             htmlStr = [NSString stringWithFormat:@"<div>%@</div><div>%@</div>",title,content];
             
+            htmlStr = [htmlStr stringByReplacingOccurrencesOfString:@"(星座www.meiguoshenpo.com)" withString:@""];
+            
             if (completion) {
                 completion(htmlStr);
             }
@@ -153,6 +155,8 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
                 
                 htmlStr = [NSString stringWithFormat:@"<div>%@</div><div>%@</div>",page == 1?title:@"",content];
                 htmlStr = [NSString stringWithFormat:@"%@%@",initHtmlStr,htmlStr]; //把上一页和本页合并
+                
+                htmlStr = [htmlStr stringByReplacingOccurrencesOfString:@"(星座www.meiguoshenpo.com)" withString:@""];
                 
                 if (atagArray.count == 0 || page == atagArray.count) {
                     if (completion) {
