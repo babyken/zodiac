@@ -103,11 +103,14 @@ static NSArray *zodiacs = nil;
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.opaque = NO;
     
+    [self showDownloadHud:YES];
+    
     // initialize data
     self.title = zodiacs[currentSign];
     [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:currentType Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
+        [self showDownloadHud:NO];
     }];
     
     // interstitial ad
@@ -197,14 +200,12 @@ static NSArray *zodiacs = nil;
     self.title = zodiacs[currentSign = [sender.object intValue]];
     
     // Loading indicator
-    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-
-    _hud.labelText = @"下載中";
+    [self showDownloadHud:YES];
     
     [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:(currentType = 1) Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
-        [_hud hide:YES];
+        [self showDownloadHud:NO];
     }];
 }
 
@@ -219,9 +220,13 @@ static NSArray *zodiacs = nil;
     
     NSLog(@"value change for segment control");
     currentType = sender.selectedSegmentIndex + 1;
+    
+    [self showDownloadHud:YES];
+    
     [[WebdataParser sharedParser] fetchHoroscopesWithSign:currentSign type:currentType Completion:^(id result) {
         _zodiacArray = [NSArray arrayWithArray:result];
         [_tableView reloadData];
+        [self showDownloadHud:NO];
     }];
 }
 
@@ -319,6 +324,26 @@ static NSArray *zodiacs = nil;
 
 - (void)adsMoGoInterstitialAdFailedWithError:(NSError *) error{
     NSLog(@"MOGO Full Screen Failed %@",error);
+}
+
+#pragma mark -
+#pragma mark MBProgressHud
+- (void)showDownloadHud:(BOOL)showHUD {
+    if (showHUD) {
+        
+        // in case, there is hud on screen
+        // prevent double hud
+        if (_hud != nil) {
+            [_hud hide:YES];
+        }
+        
+        _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        
+        _hud.labelText = @"下載中";
+    }
+    else {
+        [_hud hide:YES];;
+    }
 }
 
 
