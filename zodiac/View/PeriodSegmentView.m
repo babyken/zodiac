@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UISegmentedControl *segmentControl;
 
+- (void)resetTheSegmentImage;
+
 @end
 
 @implementation PeriodSegmentView
@@ -38,7 +40,7 @@
         // Segment control
         _segmentControl = [[UISegmentedControl alloc] initWithItems:arySegmentImage];
         [_segmentControl addTarget:target action:action forControlEvents:UIControlEventValueChanged];
-        _segmentControl.frame = (CGRect){{0, 0}, {frame.size.width, 53.0}};
+        _segmentControl.frame = (CGRect){{0, 0}, {frame.size.width, 62.5}};
         [self fixImagesOfSegmentedControlForiOS7];
         [self addSubview:_segmentControl];
         
@@ -55,8 +57,8 @@
         [imgViewBg setImage:[UIImage imageNamed:@"main_segment_bg"]];
         [self addSubview:imgViewBg];
        
-        NSArray *arySegmentImage = [NSArray arrayWithObjects:   [UIImage imageNamed:@"main_segment_day"],
-                                    [UIImage imageNamed:@"main_segment_week.png"],
+        NSArray *arySegmentImage = [NSArray arrayWithObjects:   [UIImage imageNamed:@"main_segment_day_highlight"],
+                                    [UIImage imageNamed:@"main_segment_week"],
                                     [UIImage imageNamed:@"main_segment_month"], nil];
         
         // Segment control
@@ -83,6 +85,42 @@
     }
     
     self.segmentControl.tintColor = [UIColor clearColor];
+}
+
+- (void)highlgihtSegmentWithIndex:(int)index {
+    
+    UIImage *highlightImage = nil;
+    
+    
+    switch (index) {
+        case 0:
+            highlightImage = [UIImage imageNamed:@"main_segment_day_highlight"];
+        
+            break;
+        case 1:
+            highlightImage = [UIImage imageNamed:@"main_segment_week_highlight"];
+        
+            break;
+        case 2:
+            highlightImage = [UIImage imageNamed:@"main_segment_month_highlight"];
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self resetTheSegmentImage];
+    [self.segmentControl setImage:highlightImage forSegmentAtIndex:index];
+    [self fixImagesOfSegmentedControlForiOS7];
+}
+
+- (void)resetTheSegmentImage {
+    [self.segmentControl setImage:[UIImage imageNamed:@"main_segment_day"] forSegmentAtIndex:0];
+    [self.segmentControl setImage:[UIImage imageNamed:@"main_segment_week"] forSegmentAtIndex:1];
+    [self.segmentControl setImage:[UIImage imageNamed:@"main_segment_month"] forSegmentAtIndex:2];
+    
+    [self fixImagesOfSegmentedControlForiOS7];
 }
 
 

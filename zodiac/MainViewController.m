@@ -85,10 +85,10 @@ static NSArray *zodiacs = nil;
     
     
     // =========== Segment Control ============
-    _periodSegmentView = [[PeriodSegmentView alloc] initWithFrame:(CGRect){{0.0, 0.0}, {bounds.size.width, 53.0}}
+    _periodSegmentView = [[PeriodSegmentView alloc] initWithFrame:(CGRect){{0.0, 0.0}, {bounds.size.width, 62.5}}
                                                                    andSegmentTarget:self
                                                                          withAction:@selector(periodSegmentValueChange:)];
-    
+    [_periodSegmentView highlgihtSegmentWithIndex:0];
     [self.view addSubview:_periodSegmentView];
     
 //    _fateDetailView = [[FateDetailView alloc] initWithFrame:(CGRect){{0.0, _periodSegmentView.frame.size.height}, {bounds.size.width, bounds.size.height - _periodSegmentView.frame.size.height}}];
@@ -218,7 +218,9 @@ static NSArray *zodiacs = nil;
 
 - (void)periodSegmentValueChange:(UISegmentedControl*)sender {
     
-    NSLog(@"value change for segment control");
+    [_periodSegmentView highlgihtSegmentWithIndex:sender.selectedSegmentIndex];
+    
+//    NSLog(@"value change for segment control");
     currentType = sender.selectedSegmentIndex + 1;
     
     [self showDownloadHud:YES];

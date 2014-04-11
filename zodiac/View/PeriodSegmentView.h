@@ -11,5 +11,6 @@
 @interface PeriodSegmentView : UIView
 
 - (id)initWithFrame:(CGRect)frame andSegmentTarget:(id)target withAction:(SEL)action;
+- (void)highlgihtSegmentWithIndex:(int)index;
 
 @end
