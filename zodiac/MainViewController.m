@@ -260,10 +260,14 @@ static NSArray *zodiacs = nil;
 
 - (CGSize)getTextSize:(NSString*)text
 {
-    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:20]
-                   constrainedToSize:CGSizeMake(300, 200)
-                       lineBreakMode:NSLineBreakByWordWrapping];
-    return size;
+    UILabel* _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _titleLabel.numberOfLines = 0;
+    _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    _titleLabel.frame = CGRectMake(20, 5, 280, 200);
+    _titleLabel.text = text;
+    [_titleLabel sizeToFit];
+    
+    return CGSizeMake(self.view.frame.size.width, _titleLabel.frame.size.height );
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

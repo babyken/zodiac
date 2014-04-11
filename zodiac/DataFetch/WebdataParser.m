@@ -98,6 +98,12 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
             htmlStr = [htmlStr stringByReplacingOccurrencesOfString:@"(星座www.meiguoshenpo.com)" withString:@""];
             
             if (completion) {
+                
+                NSString *bodyHead = @"<body style=\"color:#efefef;background-color:black;\">";
+                NSString *bodyFoot = @"</body>";
+                
+                htmlStr = [NSString stringWithFormat:@"%@ %@ %@",bodyHead, htmlStr,bodyFoot];
+                
                 completion(htmlStr);
             }
         }
@@ -160,6 +166,12 @@ static const NSString* baseUrl = @"http://www.meiguoshenpo.com";
                 
                 if (atagArray.count == 0 || page == atagArray.count) {
                     if (completion) {
+                        
+                        NSString *bodyHead = @"<body style=\"color:#efefef;background-color:black;\">";
+                        NSString *bodyFoot = @"</body>";
+                        
+                        htmlStr = [NSString stringWithFormat:@"%@ %@ %@",bodyHead, htmlStr,bodyFoot];
+                        
                         completion(htmlStr);
                     }
                 }

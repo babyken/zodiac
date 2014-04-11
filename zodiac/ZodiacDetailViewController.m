@@ -40,10 +40,13 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     
+    self.view.backgroundColor = [UIColor blackColor];
+    
     CGRect bounds = self.view.bounds;
     
     _zodiacInfoWebView = [[UIWebView alloc] initWithFrame:(CGRect){{0, 0}, {bounds.size.width,bounds.size.height - 44}}];
-    _zodiacInfoWebView.backgroundColor = [UIColor blackColor];
+    _zodiacInfoWebView.backgroundColor = [UIColor clearColor];
+    _zodiacInfoWebView.opaque = NO;
     [self.view addSubview:_zodiacInfoWebView];
     
 }
@@ -75,8 +78,10 @@
     
     if (_type == 1) {
         [[WebdataParser sharedParser]htmlParserForDailyHoroscope:linkURL Completion:^(id result) {
+                        
             [_zodiacInfoWebView loadHTMLString:result baseURL:nil];
             [_hud hide:YES];
+            
         } failure:^(NSError *error) {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络好像不给力..."
                                                                 message:[error localizedDescription]

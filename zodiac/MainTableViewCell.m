@@ -23,6 +23,7 @@
         _titleLabel.textColor = [UIColor whiteColor];
         _titleLabel.numberOfLines = 0;
         _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _titleLabel.font = [UIFont systemFontOfSize:16];
     }
     return self;
 }
@@ -42,14 +43,15 @@
 - (void)setTitle:(NSString*)title
 {
     CGSize size = [self getTextSize:title];
-    _titleLabel.frame = CGRectMake(10, 5, 300, size.height);
+    _titleLabel.frame = CGRectMake(20, 5, 280, size.height);
     _titleLabel.text = title;
+    [_titleLabel sizeToFit];
 }
 
 - (CGSize)getTextSize:(NSString*)text
 {
     CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:20]
-                   constrainedToSize:CGSizeMake(300, 200)
+                   constrainedToSize:CGSizeMake(320, 200)
                        lineBreakMode:NSLineBreakByWordWrapping];
     return size;
 }
