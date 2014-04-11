@@ -264,7 +264,9 @@ static NSArray *zodiacs = nil;
     _titleLabel.numberOfLines = 0;
     _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _titleLabel.frame = CGRectMake(20, 5, 280, 200);
+    _titleLabel.font = [UIFont systemFontOfSize:16];
     _titleLabel.text = text;
+    
     [_titleLabel sizeToFit];
     
     return CGSizeMake(self.view.frame.size.width, _titleLabel.frame.size.height );

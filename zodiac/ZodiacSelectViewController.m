@@ -59,7 +59,8 @@
     tblZodiac.delegate = self;
     tblZodiac.dataSource = self;
     tblZodiac.separatorStyle = UITableViewCellSeparatorStyleNone;
-    //    self.tblBetfeeds.backgroundColor = [UIColor whiteColor];
+    tblZodiac.backgroundColor = [UIColor clearColor];
+    tblZodiac.opaque = NO;
     
     [self.view addSubview:tblZodiac];
 }
