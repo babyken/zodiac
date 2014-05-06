@@ -11,6 +11,7 @@
 @interface MainTableViewCell : UITableViewCell
 
 @property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UIView *line;
 
 - (void)setTitle:(NSString*)title;
 

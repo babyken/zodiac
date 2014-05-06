@@ -1410,7 +1410,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 冰慧 刘 (4QJD945A79)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1428,6 +1428,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "56CB86E3-5668-4F8E-86CA-4E4F44AB35FC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1449,7 +1450,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 冰慧 刘 (4QJD945A79)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1460,6 +1461,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "56CB86E3-5668-4F8E-86CA-4E4F44AB35FC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1475,6 +1477,7 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertie Liu (T7QU2XATDL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
 				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
@@ -1504,6 +1507,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "56CB86E3-5668-4F8E-86CA-4E4F44AB35FC";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1519,6 +1523,7 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertie Liu (T7QU2XATDL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
 				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
@@ -1548,6 +1553,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "56CB86E3-5668-4F8E-86CA-4E4F44AB35FC";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1595,6 +1601,105 @@
 			};
 			name = Release;
 		};
+		889D937A190E485500CAE53C /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xingzhi Cheng (E295AJ4LUJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "D47D3CC0-8A53-40CC-8077-BF8ED9D69129";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		889D937B190E485500CAE53C /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFE16A70FA945F394030CAB /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertie Liu (T7QU2XATDL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiac/zodiac-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/zodiac/Ads/AdsMoGoSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/32-bit",
+					"$(PROJECT_DIR)/zodiac/Ads/Adwo_SDK_500/adwoSDKLib/64-bit",
+					"$(PROJECT_DIR)/zodiac/Ads/Mobisage_SDK_541/MobiSageSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/DoMob_SDK_410/DomobAdSDK",
+					"$(PROJECT_DIR)/zodiac/Ads/Inmobi_SDK_410/Libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "56CB86E3-5668-4F8E-86CA-4E4F44AB35FC";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "App Store";
+		};
+		889D937C190E485500CAE53C /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zodiac.app/zodiac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zodiac/zodiac-Prefix.pch";
+				INFOPLIST_FILE = "zodiacTests/zodiacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = "App Store";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1603,6 +1708,7 @@
 			buildConfigurations = (
 				0680CA2E18CD748600489E32 /* Debug */,
 				0680CA2F18CD748600489E32 /* Release */,
+				889D937A190E485500CAE53C /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1612,6 +1718,7 @@
 			buildConfigurations = (
 				0680CA3118CD748600489E32 /* Debug */,
 				0680CA3218CD748600489E32 /* Release */,
+				889D937B190E485500CAE53C /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1621,6 +1728,7 @@
 			buildConfigurations = (
 				0680CA3418CD748600489E32 /* Debug */,
 				0680CA3518CD748600489E32 /* Release */,
+				889D937C190E485500CAE53C /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

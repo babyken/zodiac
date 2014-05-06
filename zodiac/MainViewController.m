@@ -102,6 +102,7 @@ static NSArray *zodiacs = nil;
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.opaque = NO;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self showDownloadHud:YES];
     
@@ -248,6 +249,7 @@ static NSArray *zodiacs = nil;
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_identifier];
     if (cell == nil) {
         cell = [[MainTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell_identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     [cell setTitle:_zodiacArray[indexPath.row][@"title"]];
     return cell;
@@ -255,7 +257,7 @@ static NSArray *zodiacs = nil;
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self getTextSize:_zodiacArray[indexPath.row][@"title"]].height + 10;
+    return [self getTextSize:_zodiacArray[indexPath.row][@"title"]].height + 20;
 }
 
 - (CGSize)getTextSize:(NSString*)text
