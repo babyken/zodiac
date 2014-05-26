@@ -200,6 +200,8 @@ static NSArray *zodiacs = nil;
     [self.navigationController popToRootViewControllerAnimated:NO];
     self.title = zodiacs[currentSign = [sender.object intValue]];
     
+    [_periodSegmentView highlgihtSegmentWithIndex:0];
+    
     // Loading indicator
     [self showDownloadHud:YES];
     
