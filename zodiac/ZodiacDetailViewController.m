@@ -9,10 +9,14 @@
 #import "ZodiacDetailViewController.h"
 #import "WebdataParser.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "AdMoGoInterstitial.h"
+#import "AdMoGoInterstitialDelegate.h"
 
-@interface ZodiacDetailViewController ()
+
+@interface ZodiacDetailViewController () <AdMoGoInterstitialDelegate>
 {
     MBProgressHUD *_hud;
+    AdMoGoInterstitial *interstitial;
 }
 
 @property (strong, nonatomic)UIWebView *zodiacInfoWebView;
@@ -49,12 +53,22 @@
     _zodiacInfoWebView.opaque = NO;
     [self.view addSubview:_zodiacInfoWebView];
     
+    [self performSelector:@selector(initInterstitial) withObject:nil afterDelay:7];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [interstitial stopInterstitial];
+    interstitial.delegate = nil;
+    interstitial = nil;
 }
 
 /*
@@ -105,6 +119,49 @@
             [alertView show];
         }];
     }
+}
+
+- (void)initInterstitial
+{
+    if (interstitial) {
+        [interstitial stopInterstitial];
+        interstitial = nil;
+    }
+    interstitial = [[AdMoGoInterstitial alloc]
+                    initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
+                    isRefresh:YES
+                    adInterval:20
+                    adType:AdViewTypeFullScreen
+                    adMoGoViewDelegate:self];
+    interstitial.adWebBrowswerDelegate = self;
+    
+}
+
+#pragma mark - AdMoGoInterstitialDelegate
+- (void)adsMoGoInterstitialAdDidStart{
+    NSLog(@"MOGO Full Screen Start");
+    
+}
+
+- (void)adsMoGoInterstitialAdIsReady{
+    NSLog(@"MOGO Full Screen IsReady");
+    
+}
+
+- (void)adsMoGoInterstitialAdReceivedRequest{
+    NSLog(@"MOGO Full Screen Received");
+    if ([interstitial isInterstitialReady]) {
+        [interstitial present];
+    }
+}
+
+- (void)adsMoGoInterstitialAdWillPresent{
+    NSLog(@"MOGO Full Screen Will Present");
+}
+
+
+- (void)adsMoGoInterstitialAdFailedWithError:(NSError *) error{
+    NSLog(@"MOGO Full Screen Failed %@",error);
 }
 
 @end

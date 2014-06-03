@@ -23,7 +23,7 @@
 
 #import "WebdataParser.h"
 
-@interface MainViewController () <AdMoGoDelegate,AdMoGoInterstitialDelegate,AdMoGoWebBrowserControllerUserDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface MainViewController () <AdMoGoDelegate,AdMoGoWebBrowserControllerUserDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) PeriodSegmentView *periodSegmentView;
 @property (strong, nonatomic) FateDetailView *fateDetailView;
@@ -37,7 +37,6 @@ static NSArray *zodiacs = nil;
 @implementation MainViewController
 {
     AdMoGoView *adView;
-    AdMoGoInterstitial *interstitial;
     
     MBProgressHUD *_hud;
     
@@ -113,9 +112,6 @@ static NSArray *zodiacs = nil;
         [_tableView reloadData];
         [self showDownloadHud:NO];
     }];
-    
-    // interstitial ad
-    [self performSelector:@selector(initInterstitial) withObject:nil afterDelay:2];
 
     // banner ad at the bottom
     adView = [[AdMoGoView alloc]initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e" adType:AdViewTypeNormalBanner adMoGoViewDelegate:self];
@@ -178,21 +174,6 @@ static NSArray *zodiacs = nil;
     return UIStatusBarStyleLightContent;
 }
 
-- (void)initInterstitial
-{
-    if (interstitial) {
-        [interstitial stopInterstitial];
-        interstitial = nil;
-    }
-        interstitial = [[AdMoGoInterstitial alloc]
-                        initWithAppKey:@"bbefe5c7ba344a0cb1192a1560da404e"
-                        isRefresh:YES
-                        adInterval:20
-                        adType:AdViewTypeFullScreen
-                        adMoGoViewDelegate:self];
-        interstitial.adWebBrowswerDelegate = self;
-    
-}
 
 #pragma mark - notification
 - (void)loadWebData:(NSNotification*)sender
@@ -281,8 +262,6 @@ static NSArray *zodiacs = nil;
     zodiacDetailVC.type = currentType;
     [zodiacDetailVC setLink:_zodiacArray[indexPath.row][@"link"]];
     [self.navigationController pushViewController:zodiacDetailVC animated:YES];
-    
-    [self initInterstitial];
 }
 
 #pragma mark - AdMoGoDelegate
@@ -311,32 +290,6 @@ static NSArray *zodiacs = nil;
      NSLog(@"广告接收失败回调, %@",error);
 }
 
-#pragma mark - AdMoGoInterstitialDelegate
-- (void)adsMoGoInterstitialAdDidStart{
-    NSLog(@"MOGO Full Screen Start");
-    
-}
-
-- (void)adsMoGoInterstitialAdIsReady{
-    NSLog(@"MOGO Full Screen IsReady");
-    
-}
-
-- (void)adsMoGoInterstitialAdReceivedRequest{
-    NSLog(@"MOGO Full Screen Received");
-    if ([interstitial isInterstitialReady]) {
-        [interstitial present];
-    }
-}
-
-- (void)adsMoGoInterstitialAdWillPresent{
-    NSLog(@"MOGO Full Screen Will Present");
-}
-
-
-- (void)adsMoGoInterstitialAdFailedWithError:(NSError *) error{
-    NSLog(@"MOGO Full Screen Failed %@",error);
-}
 
 #pragma mark -
 #pragma mark MBProgressHud
