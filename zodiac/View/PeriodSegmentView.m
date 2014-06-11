@@ -112,6 +112,7 @@
     
     [self resetTheSegmentImage];
     [self.segmentControl setImage:highlightImage forSegmentAtIndex:index];
+    [self.segmentControl setSelectedSegmentIndex:index];
     [self fixImagesOfSegmentedControlForiOS7];
 }
 
